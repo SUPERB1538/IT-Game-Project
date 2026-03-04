@@ -124,9 +124,7 @@ public class CardPlayService {
     }
 
     private boolean isCreatureCard(CardInstance card) {
-        if (card == null) return false;
-        String k = card.getCardKey();
-        return k != null && k.contains("_c_u_");
+        return card != null && card.isCreatureCard();
     }
 
     private void compactHandLeft(Hand hand) {

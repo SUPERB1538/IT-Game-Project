@@ -15,7 +15,8 @@
 	},
 	"bigCard": {
 		"rulesTextRows": [
-			"Provoke"
+			"Provoke (Enemy units in adjacent squares cannot",
+			"move and can only aJack this creature or other creatures with Provoke)."
 		],
 		"cardTextures": [
 			"assets/game/extra/cards/neutral_unit_h.png"

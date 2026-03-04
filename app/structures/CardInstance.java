@@ -34,4 +34,12 @@ public class CardInstance {
     public Card getVisual() {
         return visual;
     }
+
+    public boolean isCreatureCard() {
+        return configFile != null && configFile.contains("_c_u_");
+    }
+
+    public boolean isSpellCard() {
+        return configFile != null && configFile.contains("_c_s_");
+    }
 }

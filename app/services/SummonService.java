@@ -7,14 +7,8 @@ import structures.basic.Position;
 import structures.basic.Tile;
 import utils.BasicObjectBuilders;
 
-import java.io.File;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
 /**
- * Creature summoning extracted from GameRulesEngine (Phase 2 Step 2.4A).
- * Keeps behaviour identical to your current summon implementation.
+ * Creature summoning logic. Reliably derives the corresponding unit configuration file path based on the card configuration file name.
  */
 public class SummonService {
 
@@ -52,15 +46,18 @@ public class SummonService {
 
         // Only creature summon handled here
         if (!isCreatureCard(card)) {
+            // refund mana for now (spells not handled here)
             p1.setMana(Math.min(9, p1.getMana() + cost));
             BasicCommands.setPlayer1Mana(out, gameState.getPlayer1());
             ui.notifyP1(out, "Spell cards not implemented", 2);
             return false;
         }
 
-        String unitConfig = resolveUnitConfig(card.getConfigFile(), card.getCardKey());
-
-        if (unitConfig == null || !fileExists(unitConfig)) {
+        String unitConfig = unitConfFromCardConf(card.getConfigFile());
+        if (unitConfig == null) {
+            // refund mana
+            p1.setMana(Math.min(9, p1.getMana() + cost));
+            BasicCommands.setPlayer1Mana(out, gameState.getPlayer1());
             ui.notifyP1(out, "Unit config missing for: " + card.getCardKey(), 3);
             return false;
         }
@@ -73,15 +70,17 @@ public class SummonService {
         }
 
         if (summoned == null) {
+            // refund mana
             p1.setMana(Math.min(9, p1.getMana() + cost));
             BasicCommands.setPlayer1Mana(out, gameState.getPlayer1());
-            ui.notifyP1(out, "Summon failed (unit config missing)", 2);
+            ui.notifyP1(out, "Summon failed, cannot load: " + unitConfig, 3);
             return false;
         }
 
-        int[] stats = creatureStats(card.getCardKey());
+        // Stats derived from config file token
+        int[] stats = creatureStats(card.getConfigFile());
         int atk = stats[0];
-        int hp = stats[1];
+        int hp  = stats[1];
 
         summoned.setOwnerPlayerId(1);
         summoned.setMaxHealth(hp);
@@ -89,7 +88,7 @@ public class SummonService {
         summoned.setAttack(atk);
         summoned.setPositionByTile(targetTile);
 
-        // Summoning sickness tracking (same as before)
+        // Summoning sickness tracking
         summoned.setSummonedOnTurn(gameState.getGlobalTurnNumber());
 
         // Put on board + index
@@ -115,14 +114,14 @@ public class SummonService {
     }
 
     private boolean isCreatureCard(CardInstance card) {
-        if (card == null) return false;
-        String k = card.getCardKey();
-        return k != null && k.contains("_c_u_");
+        return card != null
+                && card.getConfigFile() != null
+                && card.getConfigFile().contains("_c_u_");
     }
 
-    private int[] creatureStats(String cardKey) {
-        if (cardKey == null) return new int[]{1, 1};
-        String k = cardKey.toLowerCase();
+    private int[] creatureStats(String tokenSource) {
+        if (tokenSource == null) return new int[]{1, 1};
+        String k = tokenSource.toLowerCase();
 
         if (k.contains("bad_omen")) return new int[]{0, 1};
         if (k.contains("gloom_chaser")) return new int[]{3, 1};
@@ -151,66 +150,18 @@ public class SummonService {
         }
     }
 
-    private String resolveUnitConfig(String cardConfigPath, String cardKey) {
-        String derived = null;
-        if (cardConfigPath != null) {
-            derived = cardConfigPath.replace("/cards/", "/units/")
-                    .replace("\\cards\\", "\\units\\")
-                    .replace("_c_u_", "_u_");
-            if (fileExists(derived)) return derived;
-        }
+    private static String unitConfFromCardConf(String cardConfigFile) {
+        if (cardConfigFile == null) return null;
 
-        String token = extractToken(cardConfigPath, cardKey);
-        if (token == null || token.isEmpty()) return derived;
+        int slash = Math.max(cardConfigFile.lastIndexOf('/'), cardConfigFile.lastIndexOf('\\'));
+        String file = (slash >= 0) ? cardConfigFile.substring(slash + 1) : cardConfigFile;
 
-        String unitsDir = "conf/gameconfs/units";
-        File dir = new File(unitsDir);
-        if (!dir.exists() || !dir.isDirectory()) return derived;
+        int idx = file.indexOf("_c_u_");
+        if (idx < 0) return null;
 
-        File[] files = dir.listFiles((d, name) -> name.endsWith(".json") && name.contains(token));
-        if (files != null && files.length > 0) return unitsDir + "/" + files[0].getName();
+        String unitName = file.substring(idx + "_c_u_".length());
+        if (unitName.endsWith(".json")) unitName = unitName.substring(0, unitName.length() - 5);
 
-        return derived;
-    }
-
-    private boolean fileExists(String pathStr) {
-        if (pathStr == null) return false;
-        try {
-            Path p = Paths.get(pathStr);
-            return Files.exists(p);
-        } catch (Exception e) {
-            return false;
-        }
-    }
-
-    private String extractToken(String cardConfigPath, String cardKey) {
-        String source = (cardConfigPath != null) ? cardConfigPath : cardKey;
-        if (source == null) return null;
-
-        String s = source;
-        int slash = Math.max(s.lastIndexOf('/'), s.lastIndexOf('\\'));
-        if (slash >= 0) s = s.substring(slash + 1);
-        if (s.endsWith(".json")) s = s.substring(0, s.length() - 5);
-
-        s = s.replace("c_u_", "").replace("u_", "");
-
-        String[] parts = s.split("_");
-        if (parts.length >= 3 && isNumeric(parts[0]) && isNumeric(parts[1])) {
-            StringBuilder sb = new StringBuilder();
-            for (int i = 2; i < parts.length; i++) {
-                if (sb.length() > 0) sb.append("_");
-                sb.append(parts[i]);
-            }
-            s = sb.toString();
-        }
-        return s;
-    }
-
-    private boolean isNumeric(String x) {
-        if (x == null || x.isEmpty()) return false;
-        for (int i = 0; i < x.length(); i++) {
-            if (!Character.isDigit(x.charAt(i))) return false;
-        }
-        return true;
+        return "conf/gameconfs/units/" + unitName + ".json";
     }
 }

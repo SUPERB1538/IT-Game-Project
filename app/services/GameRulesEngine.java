@@ -159,7 +159,7 @@ public class GameRulesEngine {
         gameState.setSelectedUnitId(null);
         gameState.setSelectedCardPos(null);
 
-        ui.redrawHandNormal(out, gameState);
+        ui.showHumanHandUI(out, gameState);
     }
 
     private boolean isMoveHighlighted(GameState s, int x, int y) {
