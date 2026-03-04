@@ -1,0 +1,44 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/wubingze/Desktop/workspace_java_backend/UofG/IT-Game-Project/app/services/EffectResolver.java:4:1: 程序包effects不存在[0m
+[0m[[0m[31merror[0m] [0m[0meffects.Effect[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/wubingze/Desktop/workspace_java_backend/UofG/IT-Game-Project/app/services/EffectResolver.java:5:1: 程序包effects不存在[0m
+[0m[[0m[31merror[0m] [0m[0meffects.EffectStack[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/wubingze/Desktop/workspace_java_backend/UofG/IT-Game-Project/app/services/SummonService.java:4:1: 程序包effects不存在[0m
+[0m[[0m[31merror[0m] [0m[0meffects.EffectStack[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/wubingze/Desktop/workspace_java_backend/UofG/IT-Game-Project/app/services/EffectResolver.java:24:1: 找不到符号[0m
+[0m[[0m[31merror[0m] [0m[0m  符号:   类 EffectStack[0m
+[0m[[0m[31merror[0m] [0m[0m  位置: 类 services.EffectResolver[0m
+[0m[[0m[31merror[0m] [0m[0mEffectStack[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/wubingze/Desktop/workspace_java_backend/UofG/IT-Game-Project/app/services/TriggerSystem.java:3:1: 程序包effects不存在[0m
+[0m[[0m[31merror[0m] [0m[0meffects.Effect[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/wubingze/Desktop/workspace_java_backend/UofG/IT-Game-Project/app/services/TriggerSystem.java:4:1: 程序包effects不存在[0m
+[0m[[0m[31merror[0m] [0m[0meffects.EffectStack[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/wubingze/Desktop/workspace_java_backend/UofG/IT-Game-Project/app/services/SummonService.java:24:1: 找不到符号[0m
+[0m[[0m[31merror[0m] [0m[0m  符号:   类 EffectStack[0m
+[0m[[0m[31merror[0m] [0m[0m  位置: 类 services.SummonService[0m
+[0m[[0m[31merror[0m] [0m[0mEffectStack[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/wubingze/Desktop/workspace_java_backend/UofG/IT-Game-Project/app/services/TriggerSystem.java:26:1: 找不到符号[0m
+[0m[[0m[31merror[0m] [0m[0m  符号:   类 EffectStack[0m
+[0m[[0m[31merror[0m] [0m[0m  位置: 类 services.TriggerSystem[0m
+[0m[[0m[31merror[0m] [0m[0mEffectStack[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/wubingze/Desktop/workspace_java_backend/UofG/IT-Game-Project/app/services/PersistentEffectManager.java:3:1: 程序包effects不存在[0m
+[0m[[0m[31merror[0m] [0m[0meffects.EffectStack[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/wubingze/Desktop/workspace_java_backend/UofG/IT-Game-Project/app/services/PersistentEffectManager.java:15:1: 找不到符号[0m
+[0m[[0m[31merror[0m] [0m[0m  符号:   类 EffectStack[0m
+[0m[[0m[31merror[0m] [0m[0m  位置: 类 services.PersistentEffectManager[0m
+[0m[[0m[31merror[0m] [0m[0mEffectStack[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/wubingze/Desktop/workspace_java_backend/UofG/IT-Game-Project/app/services/EffectResolver.java:27:1: 找不到符号[0m
+[0m[[0m[31merror[0m] [0m[0m  符号:   类 Effect[0m
+[0m[[0m[31merror[0m] [0m[0m  位置: 类 services.EffectResolver[0m
+[0m[[0m[31merror[0m] [0m[0mEffect[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/wubingze/Desktop/workspace_java_backend/UofG/IT-Game-Project/app/services/EffectResolver.java:32:1: 找不到符号[0m
+[0m[[0m[31merror[0m] [0m[0m  符号:   变量 DAMAGE[0m
+[0m[[0m[31merror[0m] [0m[0m  位置: 类 services.EffectResolver[0m
+[0m[[0m[31merror[0m] [0m[0mDAMAGE[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/wubingze/Desktop/workspace_java_backend/UofG/IT-Game-Project/app/services/EffectResolver.java:36:1: 找不到符号[0m
+[0m[[0m[31merror[0m] [0m[0m  符号:   变量 HEAL[0m
+[0m[[0m[31merror[0m] [0m[0m  位置: 类 services.EffectResolver[0m
+[0m[[0m[31merror[0m] [0m[0mHEAL[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/wubingze/Desktop/workspace_java_backend/UofG/IT-Game-Project/app/services/EffectResolver.java:39:1: 找不到符号[0m
+[0m[[0m[31merror[0m] [0m[0m  符号:   变量 SUMMON[0m
+[0m[[0m[31merror[0m] [0m[0m  位置: 类 services.EffectResolver[0m
+[0m[[0m[31merror[0m] [0m[0mSUMMON[0m
