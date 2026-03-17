@@ -1,0 +1,1271 @@
+2026-02-11 06:30:39,331 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-6 - Slf4jLogger started
+2026-02-11 06:30:39,392 [INFO] from org.hibernate.validator.internal.util.Version in play-dev-mode-akka.actor.default-dispatcher-7 - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-11 06:30:39,481 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-7 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.csrf.CSRFFilter
+
+2026-02-11 06:30:39,483 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-7 - Application started (Dev) (no global state)
+2026-02-11 06:31:14,906 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-shutdown-hook-1 - Stopping Akka HTTP server...
+2026-02-11 06:31:14,909 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-28 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-11 06:31:44,923 [WARN] from akka.actor.CoordinatedShutdown in play-dev-mode-akka.actor.default-dispatcher-4 - CoordinatedShutdown from JVM shutdown failed: Future timed out after [30000 milliseconds]
+2026-02-21 07:50:09,350 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-21 07:50:09,590 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-21 07:50:09,826 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-21 07:50:10,024 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-21 07:51:33,716 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-21 07:51:33,717 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-21 07:51:33,721 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-21 07:51:33,735 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Running provided shutdown stop hooks
+2026-02-21 08:07:49,829 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-21 08:07:50,088 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-21 08:07:50,344 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-21 08:07:50,558 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-21 08:10:22,139 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-21 08:10:22,141 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-21 08:10:22,146 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-21 08:10:22,161 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Running provided shutdown stop hooks
+2026-02-21 08:12:58,318 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-21 08:12:58,569 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-21 08:12:58,811 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-21 08:12:59,034 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-21 08:16:26,848 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-21 08:16:26,851 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-21 08:16:26,859 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-21 08:16:26,874 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Running provided shutdown stop hooks
+2026-02-21 08:19:33,344 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-21 08:19:33,588 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-21 08:19:33,832 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-21 08:19:34,038 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-21 08:21:53,314 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-21 08:21:53,316 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-21 08:21:53,323 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-21 08:21:53,334 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Running provided shutdown stop hooks
+2026-02-21 09:04:13,334 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-21 09:04:13,602 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-21 09:04:13,837 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-21 09:04:14,068 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-21 09:05:15,196 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-21 09:05:15,200 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-21 09:05:15,207 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-21 09:05:15,226 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-14 - Running provided shutdown stop hooks
+2026-02-21 09:06:32,898 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-21 09:06:33,178 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-21 09:06:33,435 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-21 09:06:33,660 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-21 09:08:43,048 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-21 09:08:43,050 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-21 09:08:43,056 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-15 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-21 09:08:43,065 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-15 - Running provided shutdown stop hooks
+2026-02-21 09:11:57,778 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-21 09:11:58,038 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-21 09:11:58,297 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-21 09:11:58,521 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-21 09:13:31,197 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-21 09:13:31,200 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-21 09:13:31,217 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-16 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-21 09:13:31,265 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Running provided shutdown stop hooks
+2026-02-21 09:16:49,203 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-21 09:16:49,460 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-21 09:16:49,692 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-21 09:16:49,915 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-21 09:18:40,837 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-21 09:18:40,840 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-21 09:18:40,845 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-21 09:18:40,856 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Running provided shutdown stop hooks
+2026-02-21 09:34:11,044 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-21 09:34:11,288 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-21 09:34:11,530 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-21 09:34:11,735 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-21 09:36:22,226 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-21 09:36:22,229 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-21 09:36:22,236 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-21 09:36:22,249 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Running provided shutdown stop hooks
+2026-02-21 09:55:07,087 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-21 09:55:07,384 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-21 09:55:07,647 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-21 09:55:07,911 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-21 09:55:46,280 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-21 09:55:46,283 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-21 09:55:46,291 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-21 09:55:46,312 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Running provided shutdown stop hooks
+2026-02-21 10:28:59,732 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-21 10:29:00,002 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-21 10:29:00,259 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-21 10:29:00,503 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-21 10:29:46,645 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-21 10:29:46,648 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-21 10:29:46,653 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-21 10:29:46,672 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Running provided shutdown stop hooks
+2026-02-21 23:39:20,045 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-21 23:39:20,304 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-21 23:39:20,552 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-21 23:39:20,780 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-21 23:40:33,071 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-21 23:40:33,074 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-21 23:40:33,080 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-21 23:40:33,093 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Running provided shutdown stop hooks
+2026-02-22 03:45:51,826 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-22 03:45:52,076 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-22 03:45:52,313 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-22 03:45:52,540 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-22 03:46:12,358 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-22 03:46:12,360 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-22 03:46:12,366 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-16 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-22 03:46:12,384 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-17 - Running provided shutdown stop hooks
+2026-02-25 00:20:49,060 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-25 00:20:49,320 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-25 00:20:49,574 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-25 00:20:49,795 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-25 00:22:13,953 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-25 00:22:13,956 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-25 00:22:13,963 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-17 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-25 00:22:13,976 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-17 - Running provided shutdown stop hooks
+2026-02-25 01:12:02,855 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-25 01:12:03,112 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-25 01:12:03,367 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-25 01:12:03,599 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-25 02:13:20,388 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-25 02:13:20,389 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-25 02:13:20,394 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-25 02:13:20,413 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-20 - Running provided shutdown stop hooks
+2026-02-26 06:46:09,932 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-26 06:46:10,194 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-26 06:46:10,446 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-26 06:46:10,662 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-26 06:46:37,564 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-26 06:46:37,567 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-26 06:46:37,574 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-16 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-26 06:46:37,597 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-18 - Running provided shutdown stop hooks
+2026-02-26 06:53:20,352 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-26 06:53:20,602 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-26 06:53:20,836 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-26 06:53:21,066 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-26 06:53:36,235 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-26 06:53:36,238 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-26 06:53:36,245 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-26 06:53:36,261 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Running provided shutdown stop hooks
+2026-02-26 07:34:49,364 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-26 07:34:49,606 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-26 07:34:49,838 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-26 07:34:50,033 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-26 07:39:02,140 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-26 07:39:02,143 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-26 07:39:02,151 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-26 07:39:02,163 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Running provided shutdown stop hooks
+2026-02-26 23:58:34,499 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-26 23:58:34,764 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-26 23:58:35,038 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-26 23:58:35,272 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 00:04:33,519 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 00:04:33,521 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 00:04:33,525 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-34 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 00:04:33,539 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-34 - Running provided shutdown stop hooks
+2026-02-27 03:18:09,934 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 03:18:10,189 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 03:18:10,443 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 03:18:10,669 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 03:30:52,029 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 03:30:52,031 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 03:30:52,039 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-32 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 03:30:52,057 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-37 - Running provided shutdown stop hooks
+2026-02-27 03:31:04,287 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 03:31:04,548 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 03:31:04,811 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 03:31:05,043 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 03:41:00,054 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 03:41:00,056 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 03:41:00,062 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-10 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 03:41:00,073 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-10 - Running provided shutdown stop hooks
+2026-02-27 04:07:37,099 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 04:07:37,350 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 04:07:37,606 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 04:07:37,830 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 04:07:51,802 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 04:07:51,805 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 04:07:51,812 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 04:07:51,833 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Running provided shutdown stop hooks
+2026-02-27 04:39:12,110 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 04:39:12,387 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 04:39:12,713 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 04:39:12,946 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 04:41:49,808 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 04:41:49,810 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 04:41:49,815 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 04:41:49,826 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-19 - Running provided shutdown stop hooks
+2026-02-27 04:45:59,051 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 04:45:59,302 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 04:45:59,541 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 04:45:59,778 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 04:46:31,664 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 04:46:31,666 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 04:46:31,671 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 04:46:31,691 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Running provided shutdown stop hooks
+2026-02-27 04:50:53,568 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 04:50:53,833 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 04:50:54,094 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 04:50:54,318 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 04:51:42,635 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 04:51:42,638 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 04:51:42,645 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 04:51:42,662 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Running provided shutdown stop hooks
+2026-02-27 04:55:56,671 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 04:55:56,927 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 04:55:57,180 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 04:55:57,402 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 04:59:26,033 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 04:59:26,036 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 04:59:26,042 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 04:59:26,054 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Running provided shutdown stop hooks
+2026-02-27 04:59:37,638 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 04:59:37,890 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 04:59:38,130 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 04:59:38,349 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 05:02:43,915 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 05:02:43,917 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 05:02:43,922 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 05:02:43,935 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Running provided shutdown stop hooks
+2026-02-27 05:08:16,106 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 05:08:16,368 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 05:08:16,615 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 05:08:16,846 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 05:09:04,250 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 05:09:04,252 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 05:09:04,260 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 05:09:04,276 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Running provided shutdown stop hooks
+2026-02-27 05:17:25,694 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 05:17:25,946 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 05:17:26,196 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 05:17:26,416 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 05:23:32,872 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 05:23:32,876 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 05:23:32,883 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 05:23:32,897 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-16 - Running provided shutdown stop hooks
+2026-02-27 05:23:44,404 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 05:23:44,655 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 05:23:44,902 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 05:23:45,112 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 05:35:27,414 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 05:35:27,417 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 05:35:27,425 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 05:35:27,440 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-16 - Running provided shutdown stop hooks
+2026-02-27 05:35:37,844 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 05:35:38,095 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 05:35:38,346 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 05:35:38,561 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 05:36:29,217 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 05:36:29,220 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 05:36:29,227 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 05:36:29,246 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Running provided shutdown stop hooks
+2026-02-27 05:40:02,372 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 05:40:02,638 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 05:40:02,924 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 05:40:03,159 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 05:47:16,344 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 05:47:16,346 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 05:47:16,349 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-17 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 05:47:16,359 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Running provided shutdown stop hooks
+2026-02-27 05:49:00,008 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 05:49:00,270 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 05:49:00,495 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 05:49:00,743 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 05:49:33,575 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 05:49:33,578 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 05:49:33,585 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 05:49:33,604 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Running provided shutdown stop hooks
+2026-02-27 05:59:22,280 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 05:59:22,529 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 05:59:22,782 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 05:59:23,005 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 05:59:33,199 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 05:59:33,200 [ERROR] from akka.actor.ActorSystemImpl in application-akka.actor.default-dispatcher-8 - Uncaught error from thread [application-akka.actor.default-dispatcher-10]: 'void structures.GameState.setP1MaxMana(int)', shutting down JVM since 'akka.jvm-exit-on-fatal-error' is enabled for ActorSystem[application]
+java.lang.NoSuchMethodError: 'void structures.GameState.setP1MaxMana(int)'
+	at events.Initalize.processEvent(Initalize.java:51)
+	at actors.GameActor.processMessage(GameActor.java:115)
+	at actors.GameActor.lambda$createReceive$0(GameActor.java:95)
+	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:24)
+	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:20)
+	at scala.PartialFunction.applyOrElse(PartialFunction.scala:187)
+	at scala.PartialFunction.applyOrElse$(PartialFunction.scala:186)
+	at akka.japi.pf.UnitCaseStatement.applyOrElse(CaseStatements.scala:20)
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:241)
+	at akka.actor.Actor.aroundReceive(Actor.scala:534)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:532)
+	at akka.actor.AbstractActor.aroundReceive(AbstractActor.scala:220)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:573)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:543)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:269)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:230)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:242)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+2026-02-27 05:59:33,200 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 05:59:33,205 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 05:59:33,220 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-13 - Running provided shutdown stop hooks
+2026-02-27 08:11:52,916 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 08:11:53,174 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 08:11:53,423 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 08:11:53,651 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 08:12:10,092 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 08:12:10,095 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 08:12:10,101 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 08:12:10,124 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-17 - Running provided shutdown stop hooks
+2026-02-27 08:12:34,828 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 08:12:35,073 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 08:12:35,326 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 08:12:35,538 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 08:18:32,144 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 08:18:32,146 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 08:18:32,154 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 08:18:32,167 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Running provided shutdown stop hooks
+2026-02-27 08:34:26,074 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 08:34:26,333 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 08:34:26,588 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 08:34:26,817 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 08:35:19,139 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 08:35:19,142 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 08:35:19,149 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 08:35:19,167 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Running provided shutdown stop hooks
+2026-02-27 08:45:11,638 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 08:45:11,886 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 08:45:12,133 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 08:45:12,356 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 08:46:04,512 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 08:46:04,516 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 08:46:04,522 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 08:46:04,541 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Running provided shutdown stop hooks
+2026-02-27 08:51:07,879 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 08:51:08,146 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 08:51:08,408 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 08:51:08,637 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 08:54:54,360 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 08:54:54,362 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 08:54:54,370 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 08:54:54,384 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Running provided shutdown stop hooks
+2026-02-27 09:03:36,239 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 09:03:36,498 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 09:03:36,742 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 09:03:36,966 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 09:04:38,468 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 09:04:38,471 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 09:04:38,479 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 09:04:38,495 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Running provided shutdown stop hooks
+2026-02-27 09:06:41,443 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 09:06:41,696 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 09:06:41,944 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 09:06:42,165 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 09:07:47,285 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 09:07:47,288 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 09:07:47,295 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 09:07:47,314 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Running provided shutdown stop hooks
+2026-02-27 09:12:28,348 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 09:12:28,605 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 09:12:28,860 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 09:12:29,081 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 09:14:43,011 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 09:14:43,014 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 09:14:43,021 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-18 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 09:14:43,031 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-18 - Running provided shutdown stop hooks
+2026-02-27 09:19:16,935 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 09:19:17,195 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 09:19:17,440 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 09:19:17,663 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 09:20:45,623 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 09:20:45,626 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 09:20:45,630 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 09:20:45,646 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Running provided shutdown stop hooks
+2026-02-27 09:27:42,163 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 09:27:42,432 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 09:27:42,697 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 09:27:42,928 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 09:30:37,513 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 09:30:37,516 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 09:30:37,522 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 09:30:37,536 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Running provided shutdown stop hooks
+2026-02-27 09:30:45,992 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 09:30:46,243 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 09:30:46,498 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 09:30:46,716 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 09:31:46,118 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 09:31:46,121 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 09:31:46,129 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-15 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 09:31:46,145 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-33 - Running provided shutdown stop hooks
+2026-02-27 09:39:49,524 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 09:39:49,768 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 09:39:50,028 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 09:39:50,243 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 09:40:13,829 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 09:40:13,831 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 09:40:13,839 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 09:40:13,855 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Running provided shutdown stop hooks
+2026-02-27 09:40:35,104 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 09:40:35,357 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 09:40:35,595 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 09:40:35,817 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 09:41:37,941 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 09:41:37,944 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 09:41:37,951 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 09:41:37,977 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-65 - Running provided shutdown stop hooks
+2026-02-27 09:41:46,773 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 09:41:47,034 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 09:41:47,260 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 09:41:47,497 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 09:42:33,073 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 09:42:33,076 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 09:42:33,083 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 09:42:33,099 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-36 - Running provided shutdown stop hooks
+2026-02-27 09:42:42,465 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 09:42:42,715 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 09:42:42,953 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 09:42:43,182 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 09:48:35,863 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 09:48:35,866 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 09:48:35,874 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 09:48:35,891 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-52 - Running provided shutdown stop hooks
+2026-02-27 09:48:43,964 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 09:48:44,214 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 09:48:44,462 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 09:48:44,673 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 09:54:19,942 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 09:54:19,944 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 09:54:19,952 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 09:54:19,969 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Running provided shutdown stop hooks
+2026-02-27 10:37:39,761 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 10:37:40,023 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 10:37:40,297 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 10:37:40,541 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 10:38:52,502 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 10:38:52,504 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 10:38:52,510 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-19 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 10:38:52,530 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-15 - Running provided shutdown stop hooks
+2026-02-27 10:54:11,285 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-5 - Slf4jLogger started
+2026-02-27 10:54:11,544 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 10:54:11,796 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 10:54:12,032 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 10:55:20,215 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 10:55:20,217 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 10:55:20,221 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 10:55:20,235 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Running provided shutdown stop hooks
+2026-02-27 10:56:25,184 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 10:56:25,444 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 10:56:25,683 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 10:56:25,926 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 11:00:36,257 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 11:00:36,260 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 11:00:36,266 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-8 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 11:00:36,284 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-8 - Running provided shutdown stop hooks
+2026-02-27 11:06:54,726 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 11:06:54,978 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 11:06:55,230 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 11:06:55,455 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 11:07:29,381 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 11:07:29,383 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 11:07:29,391 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 11:07:29,407 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-14 - Running provided shutdown stop hooks
+2026-02-27 11:17:44,274 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 11:17:44,526 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 11:17:44,771 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 11:17:44,994 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 11:39:37,568 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 11:39:37,571 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 11:39:37,579 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 11:39:37,595 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-16 - Running provided shutdown stop hooks
+2026-02-27 11:49:34,751 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 11:49:35,009 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 11:49:35,255 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 11:49:35,500 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 11:51:13,419 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 11:51:13,422 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 11:51:13,430 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-20 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 11:51:13,442 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-20 - Running provided shutdown stop hooks
+2026-02-27 11:57:42,778 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 11:57:43,031 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 11:57:43,287 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 11:57:43,519 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 12:01:14,837 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 12:01:14,840 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 12:01:14,848 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 12:01:14,864 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-16 - Running provided shutdown stop hooks
+2026-02-27 12:17:55,680 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 12:17:55,946 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 12:17:56,186 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 12:17:56,433 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 12:21:59,988 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 12:21:59,991 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 12:21:59,999 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 12:22:00,013 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-16 - Running provided shutdown stop hooks
+2026-02-27 12:22:10,469 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 12:22:10,719 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 12:22:10,979 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 12:22:11,219 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 12:25:10,531 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 12:25:10,533 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 12:25:10,542 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 12:25:10,555 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Running provided shutdown stop hooks
+2026-02-27 12:25:21,960 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 12:25:22,211 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 12:25:22,457 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 12:25:22,681 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 12:26:18,342 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 12:26:18,345 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 12:26:18,353 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 12:26:18,373 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Running provided shutdown stop hooks
+2026-02-27 12:33:05,598 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 12:33:05,851 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 12:33:06,097 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 12:33:06,319 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 12:34:00,820 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 12:34:00,823 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 12:34:00,831 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 12:34:00,849 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Running provided shutdown stop hooks
+2026-02-27 12:34:40,221 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 12:34:40,472 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 12:34:40,705 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 12:34:40,943 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 12:35:19,420 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 12:35:19,424 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 12:35:19,431 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 12:35:19,448 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-14 - Running provided shutdown stop hooks
+2026-02-27 12:37:25,222 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-27 12:37:25,469 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-27 12:37:25,701 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-27 12:37:25,927 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-27 12:38:20,962 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-27 12:38:20,964 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-27 12:38:20,973 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-27 12:38:20,990 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Running provided shutdown stop hooks
+2026-02-28 00:37:55,255 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 00:37:55,522 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 00:37:55,779 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 00:37:56,005 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 00:39:12,216 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 00:39:12,219 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 00:39:12,226 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-16 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 00:39:12,242 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-21 - Running provided shutdown stop hooks
+2026-02-28 01:30:15,622 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 01:30:15,912 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 01:30:16,198 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 01:30:16,459 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 01:31:21,601 [ERROR] from akka.stream.impl.ActorRefSource in application-akka.actor.default-dispatcher-7 - Failing because buffer is full and overflowStrategy is: [Fail] in stream [actorRefSource]
+2026-02-28 01:31:21,606 [ERROR] from play.core.server.common.WebSocketFlowHandler in application-akka.actor.default-dispatcher-7 - WebSocket flow threw exception
+akka.stream.BufferOverflowException: Buffer overflow (max capacity was: 16)!
+	at akka.stream.impl.ActorRefSource$$anon$1.$anonfun$ref$1(ActorRefSource.scala:132)
+	at akka.stream.impl.ActorRefSource$$anon$1.$anonfun$ref$1$adapted(ActorRefSource.scala:56)
+	at akka.stream.stage.GraphStageLogic$StageActor.internalReceive(GraphStage.scala:243)
+	at akka.stream.stage.GraphStageLogic$StageActor.$anonfun$callback$1(GraphStage.scala:202)
+	at akka.stream.stage.GraphStageLogic$StageActor.$anonfun$callback$1$adapted(GraphStage.scala:202)
+	at akka.stream.impl.fusing.GraphInterpreter.runAsyncInput(GraphInterpreter.scala:466)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:497)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:599)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:768)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:783)
+	at akka.actor.Actor.aroundReceive(Actor.scala:534)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:532)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:690)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:573)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:543)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:269)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:230)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:242)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+2026-02-28 01:31:43,602 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 01:31:43,604 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 01:31:43,609 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 01:31:43,625 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Running provided shutdown stop hooks
+2026-02-28 01:36:07,149 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 01:36:07,403 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 01:36:07,657 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 01:36:07,884 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 01:36:32,541 [ERROR] from akka.stream.impl.ActorRefSource in application-akka.actor.default-dispatcher-10 - Failing because buffer is full and overflowStrategy is: [Fail] in stream [actorRefSource]
+2026-02-28 01:36:32,551 [ERROR] from play.core.server.common.WebSocketFlowHandler in application-akka.actor.default-dispatcher-10 - WebSocket flow threw exception
+akka.stream.BufferOverflowException: Buffer overflow (max capacity was: 16)!
+	at akka.stream.impl.ActorRefSource$$anon$1.$anonfun$ref$1(ActorRefSource.scala:132)
+	at akka.stream.impl.ActorRefSource$$anon$1.$anonfun$ref$1$adapted(ActorRefSource.scala:56)
+	at akka.stream.stage.GraphStageLogic$StageActor.internalReceive(GraphStage.scala:243)
+	at akka.stream.stage.GraphStageLogic$StageActor.$anonfun$callback$1(GraphStage.scala:202)
+	at akka.stream.stage.GraphStageLogic$StageActor.$anonfun$callback$1$adapted(GraphStage.scala:202)
+	at akka.stream.impl.fusing.GraphInterpreter.runAsyncInput(GraphInterpreter.scala:466)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:497)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:599)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:768)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:783)
+	at akka.actor.Actor.aroundReceive(Actor.scala:534)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:532)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:690)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:573)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:543)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:269)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:230)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:242)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+2026-02-28 01:37:13,128 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 01:37:13,130 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 01:37:13,135 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 01:37:13,150 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-16 - Running provided shutdown stop hooks
+2026-02-28 01:38:38,989 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 01:38:39,246 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 01:38:39,503 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 01:38:39,728 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 01:39:41,155 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 01:39:41,158 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 01:39:41,166 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-16 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 01:39:41,185 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-18 - Running provided shutdown stop hooks
+2026-02-28 01:48:57,337 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 01:48:57,597 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 01:48:57,857 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 01:48:58,078 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 01:49:47,015 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 01:49:47,017 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 01:49:47,025 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 01:49:47,043 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Running provided shutdown stop hooks
+2026-02-28 01:52:51,706 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 01:52:51,967 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 01:52:52,217 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 01:52:52,445 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 01:53:43,244 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 01:53:43,245 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 01:53:43,250 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 01:53:43,264 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Running provided shutdown stop hooks
+2026-02-28 01:54:06,654 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 01:54:06,934 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 01:54:07,241 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 01:54:07,508 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 01:54:32,480 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 01:54:32,482 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 01:54:32,487 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 01:54:32,503 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Running provided shutdown stop hooks
+2026-02-28 01:57:43,285 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 01:57:43,548 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 01:57:43,801 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 01:57:44,025 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 01:58:34,712 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 01:58:34,715 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 01:58:34,723 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 01:58:34,741 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-16 - Running provided shutdown stop hooks
+2026-02-28 03:46:57,957 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 03:46:58,212 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 03:46:58,471 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 03:46:58,698 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 03:47:37,256 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 03:47:37,259 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 03:47:37,267 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 03:47:37,284 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-21 - Running provided shutdown stop hooks
+2026-02-28 03:54:56,660 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 03:54:56,917 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 03:54:57,175 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 03:54:57,400 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 03:55:26,938 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 03:55:26,941 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 03:55:26,949 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 03:55:26,965 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-16 - Running provided shutdown stop hooks
+2026-02-28 03:59:07,708 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 03:59:07,962 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 03:59:08,215 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 03:59:08,445 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 03:59:51,219 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 03:59:51,222 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 03:59:51,228 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 03:59:51,245 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-16 - Running provided shutdown stop hooks
+2026-02-28 04:04:08,626 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 04:04:08,877 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 04:04:09,124 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 04:04:09,350 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 04:10:01,757 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 04:10:01,761 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 04:10:01,770 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 04:10:01,786 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-16 - Running provided shutdown stop hooks
+2026-02-28 04:13:59,926 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 04:14:00,177 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 04:14:00,449 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 04:14:00,677 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 04:14:29,577 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 04:14:29,579 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 04:14:29,585 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 04:14:29,605 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Running provided shutdown stop hooks
+2026-02-28 04:20:10,895 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 04:20:11,149 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 04:20:11,402 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 04:20:11,624 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 04:21:56,148 [ERROR] from akka.stream.impl.ActorRefSource in application-akka.actor.default-dispatcher-7 - Failing because buffer is full and overflowStrategy is: [Fail] in stream [actorRefSource]
+2026-02-28 04:21:56,153 [ERROR] from play.core.server.common.WebSocketFlowHandler in application-akka.actor.default-dispatcher-10 - WebSocket flow threw exception
+akka.stream.BufferOverflowException: Buffer overflow (max capacity was: 16)!
+	at akka.stream.impl.ActorRefSource$$anon$1.$anonfun$ref$1(ActorRefSource.scala:132)
+	at akka.stream.impl.ActorRefSource$$anon$1.$anonfun$ref$1$adapted(ActorRefSource.scala:56)
+	at akka.stream.stage.GraphStageLogic$StageActor.internalReceive(GraphStage.scala:243)
+	at akka.stream.stage.GraphStageLogic$StageActor.$anonfun$callback$1(GraphStage.scala:202)
+	at akka.stream.stage.GraphStageLogic$StageActor.$anonfun$callback$1$adapted(GraphStage.scala:202)
+	at akka.stream.impl.fusing.GraphInterpreter.runAsyncInput(GraphInterpreter.scala:466)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:497)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:599)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:768)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:783)
+	at akka.actor.Actor.aroundReceive(Actor.scala:534)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:532)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:690)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:573)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:543)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:269)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:230)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:242)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+2026-02-28 04:23:03,756 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 04:23:03,759 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 04:23:03,765 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 04:23:03,782 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-18 - Running provided shutdown stop hooks
+2026-02-28 04:51:03,276 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 04:51:03,527 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 04:51:03,791 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 04:51:04,018 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 04:52:28,733 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 04:52:28,736 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 04:52:28,742 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-20 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 04:52:28,756 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-20 - Running provided shutdown stop hooks
+2026-02-28 05:14:54,619 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 05:14:54,875 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 05:14:55,137 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 05:14:55,361 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 05:17:20,540 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 05:17:20,543 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 05:17:20,549 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 05:17:20,560 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Running provided shutdown stop hooks
+2026-02-28 05:23:07,706 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 05:23:07,961 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 05:23:08,219 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 05:23:08,448 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 05:24:18,953 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 05:24:18,956 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 05:24:18,963 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 05:24:18,982 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Running provided shutdown stop hooks
+2026-02-28 05:32:35,861 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-5 - Slf4jLogger started
+2026-02-28 05:32:36,124 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 05:32:36,376 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 05:32:36,618 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 05:34:21,855 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 05:34:21,858 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 05:34:21,866 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 05:34:21,879 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-4 - Running provided shutdown stop hooks
+2026-02-28 05:40:33,734 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 05:40:33,993 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 05:40:34,266 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 05:40:34,495 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 05:41:52,963 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 05:41:52,966 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 05:41:52,974 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 05:41:52,992 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Running provided shutdown stop hooks
+2026-02-28 05:45:34,783 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 05:45:35,054 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 05:45:35,311 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 05:45:35,552 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 05:46:59,698 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 05:46:59,701 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 05:46:59,707 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 05:46:59,720 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Running provided shutdown stop hooks
+2026-02-28 05:52:04,029 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 05:52:04,296 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 05:52:04,552 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 05:52:04,775 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 05:53:38,129 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 05:53:38,132 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 05:53:38,139 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-19 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 05:53:38,151 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-19 - Running provided shutdown stop hooks
+2026-02-28 06:03:20,415 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 06:03:20,678 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 06:03:20,938 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 06:03:21,161 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 06:05:11,866 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 06:05:11,868 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 06:05:11,876 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 06:05:11,888 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Running provided shutdown stop hooks
+2026-02-28 06:10:35,590 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 06:10:35,841 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 06:10:36,096 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 06:10:36,322 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 06:12:16,364 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 06:12:16,367 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 06:12:16,374 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 06:12:16,386 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Running provided shutdown stop hooks
+2026-02-28 06:25:59,474 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 06:25:59,748 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 06:26:00,018 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 06:26:00,258 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 06:27:18,885 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 06:27:18,887 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 06:27:18,892 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 06:27:18,909 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-17 - Running provided shutdown stop hooks
+2026-02-28 06:30:20,755 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 06:30:21,021 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 06:30:21,280 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 06:30:21,514 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 06:31:33,358 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 06:31:33,361 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 06:31:33,367 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 06:31:33,386 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Running provided shutdown stop hooks
+2026-02-28 06:58:23,535 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 06:58:23,795 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 06:58:24,049 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 06:58:24,290 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 06:58:40,858 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 06:58:40,860 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 06:58:40,868 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-18 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 06:58:40,884 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-17 - Running provided shutdown stop hooks
+2026-02-28 08:01:38,142 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-5 - Slf4jLogger started
+2026-02-28 08:01:38,413 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 08:01:38,655 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 08:01:38,904 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 08:10:03,234 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 08:10:03,241 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 08:10:03,248 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-19 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 08:10:03,268 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-16 - Running provided shutdown stop hooks
+2026-02-28 08:10:13,824 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 08:10:14,078 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 08:10:14,321 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 08:10:14,536 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 08:11:33,451 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 08:11:33,453 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 08:11:33,460 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 08:11:33,473 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Running provided shutdown stop hooks
+2026-02-28 08:13:50,497 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 08:13:50,758 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 08:13:50,996 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 08:13:51,232 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 08:15:24,636 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 08:15:24,639 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 08:15:24,645 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 08:15:24,662 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-17 - Running provided shutdown stop hooks
+2026-02-28 08:20:32,709 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 08:20:32,975 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 08:20:33,227 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 08:20:33,521 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 08:21:00,979 [ERROR] from akka.stream.impl.ActorRefSource in application-akka.actor.default-dispatcher-9 - Failing because buffer is full and overflowStrategy is: [Fail] in stream [actorRefSource]
+2026-02-28 08:21:00,982 [ERROR] from play.core.server.common.WebSocketFlowHandler in application-akka.actor.default-dispatcher-7 - WebSocket flow threw exception
+akka.stream.BufferOverflowException: Buffer overflow (max capacity was: 16)!
+	at akka.stream.impl.ActorRefSource$$anon$1.$anonfun$ref$1(ActorRefSource.scala:132)
+	at akka.stream.impl.ActorRefSource$$anon$1.$anonfun$ref$1$adapted(ActorRefSource.scala:56)
+	at akka.stream.stage.GraphStageLogic$StageActor.internalReceive(GraphStage.scala:243)
+	at akka.stream.stage.GraphStageLogic$StageActor.$anonfun$callback$1(GraphStage.scala:202)
+	at akka.stream.stage.GraphStageLogic$StageActor.$anonfun$callback$1$adapted(GraphStage.scala:202)
+	at akka.stream.impl.fusing.GraphInterpreter.runAsyncInput(GraphInterpreter.scala:466)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:497)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:599)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:768)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:783)
+	at akka.actor.Actor.aroundReceive(Actor.scala:534)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:532)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:690)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:573)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:543)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:269)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:230)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:242)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+2026-02-28 08:28:17,987 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 08:28:17,994 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 08:28:18,003 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 08:28:18,016 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Running provided shutdown stop hooks
+2026-02-28 08:28:28,690 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 08:28:28,942 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 08:28:29,171 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 08:28:29,402 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 08:29:25,953 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 08:29:25,956 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 08:29:25,963 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 08:29:25,980 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Running provided shutdown stop hooks
+2026-02-28 08:34:45,576 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 08:34:45,835 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 08:34:46,082 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 08:34:46,311 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 08:39:38,899 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 08:39:38,904 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 08:39:38,913 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 08:39:38,930 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-16 - Running provided shutdown stop hooks
+2026-02-28 08:41:50,655 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 08:41:50,949 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 08:41:51,221 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 08:41:51,484 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 08:43:24,397 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 08:43:24,401 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 08:43:24,409 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 08:43:24,422 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Running provided shutdown stop hooks
+2026-02-28 08:47:14,354 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 08:47:14,608 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 08:47:14,869 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 08:47:15,091 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 08:48:02,416 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 08:48:02,420 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 08:48:02,427 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 08:48:02,444 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Running provided shutdown stop hooks
+2026-02-28 08:53:50,652 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-5 - Slf4jLogger started
+2026-02-28 08:53:50,912 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 08:53:51,159 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 08:53:51,389 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 08:56:08,544 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 08:56:08,548 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 08:56:08,555 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-4 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 08:56:08,575 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-16 - Running provided shutdown stop hooks
+2026-02-28 08:56:25,329 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 08:56:25,620 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 08:56:25,904 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 08:56:26,148 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 08:57:19,791 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 08:57:19,793 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 08:57:19,798 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 08:57:19,817 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-18 - Running provided shutdown stop hooks
+2026-02-28 09:03:17,818 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 09:03:18,071 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 09:03:18,332 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 09:03:18,556 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 09:04:07,550 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 09:04:07,553 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 09:04:07,561 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-16 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 09:04:07,577 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Running provided shutdown stop hooks
+2026-02-28 09:08:12,055 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-02-28 09:08:12,313 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-02-28 09:08:12,570 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-02-28 09:08:12,810 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-02-28 09:08:55,172 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-02-28 09:08:55,175 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-02-28 09:08:55,182 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-02-28 09:08:55,200 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Running provided shutdown stop hooks
+2026-03-01 03:52:12,337 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-03-01 03:52:12,614 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-03-01 03:52:12,879 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-03-01 03:52:13,119 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-03-01 04:00:42,240 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-03-01 04:00:42,241 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-03-01 04:00:42,245 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-03-01 04:00:42,257 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Running provided shutdown stop hooks
+2026-03-04 07:24:48,237 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-03-04 07:24:48,499 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-03-04 07:24:48,748 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-03-04 07:24:48,987 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-03-04 07:25:59,661 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-03-04 07:25:59,664 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-03-04 07:25:59,671 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-18 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-03-04 07:25:59,687 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-16 - Running provided shutdown stop hooks
+2026-03-05 00:18:59,056 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-03-05 00:18:59,350 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-03-05 00:18:59,610 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-03-05 00:18:59,834 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-03-05 00:19:30,126 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-03-05 00:19:30,129 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-03-05 00:19:30,136 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-17 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-03-05 00:19:30,153 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Running provided shutdown stop hooks
+2026-03-05 00:26:04,502 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-03-05 00:26:04,760 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-03-05 00:26:05,005 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-03-05 00:26:05,242 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-03-05 00:28:09,847 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-03-05 00:28:09,850 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-03-05 00:28:09,857 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-03-05 00:28:09,870 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Running provided shutdown stop hooks
+2026-03-05 00:44:24,054 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-03-05 00:44:24,322 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-03-05 00:44:24,580 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-03-05 00:44:24,832 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-03-05 00:48:20,611 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-03-05 00:48:20,614 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-03-05 00:48:20,621 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-16 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-03-05 00:48:20,639 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-18 - Running provided shutdown stop hooks
+2026-03-05 00:56:12,934 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-03-05 00:56:13,196 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-03-05 00:56:13,430 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-03-05 00:56:13,672 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-03-05 00:57:37,644 [ERROR] from akka.stream.impl.ActorRefSource in application-akka.actor.default-dispatcher-4 - Failing because buffer is full and overflowStrategy is: [Fail] in stream [actorRefSource]
+2026-03-05 00:57:37,653 [ERROR] from play.core.server.common.WebSocketFlowHandler in application-akka.actor.default-dispatcher-7 - WebSocket flow threw exception
+akka.stream.BufferOverflowException: Buffer overflow (max capacity was: 16)!
+	at akka.stream.impl.ActorRefSource$$anon$1.$anonfun$ref$1(ActorRefSource.scala:132)
+	at akka.stream.impl.ActorRefSource$$anon$1.$anonfun$ref$1$adapted(ActorRefSource.scala:56)
+	at akka.stream.stage.GraphStageLogic$StageActor.internalReceive(GraphStage.scala:243)
+	at akka.stream.stage.GraphStageLogic$StageActor.$anonfun$callback$1(GraphStage.scala:202)
+	at akka.stream.stage.GraphStageLogic$StageActor.$anonfun$callback$1$adapted(GraphStage.scala:202)
+	at akka.stream.impl.fusing.GraphInterpreter.runAsyncInput(GraphInterpreter.scala:466)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:497)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:599)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:768)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:783)
+	at akka.actor.Actor.aroundReceive(Actor.scala:534)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:532)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:690)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:573)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:543)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:269)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:230)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:242)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+2026-03-05 00:57:49,094 [ERROR] from akka.stream.impl.ActorRefSource in application-akka.actor.default-dispatcher-4 - Failing because buffer is full and overflowStrategy is: [Fail] in stream [actorRefSource]
+2026-03-05 00:57:49,094 [ERROR] from play.core.server.common.WebSocketFlowHandler in application-akka.actor.default-dispatcher-4 - WebSocket flow threw exception
+akka.stream.BufferOverflowException: Buffer overflow (max capacity was: 16)!
+	at akka.stream.impl.ActorRefSource$$anon$1.$anonfun$ref$1(ActorRefSource.scala:132)
+	at akka.stream.impl.ActorRefSource$$anon$1.$anonfun$ref$1$adapted(ActorRefSource.scala:56)
+	at akka.stream.stage.GraphStageLogic$StageActor.internalReceive(GraphStage.scala:243)
+	at akka.stream.stage.GraphStageLogic$StageActor.$anonfun$callback$1(GraphStage.scala:202)
+	at akka.stream.stage.GraphStageLogic$StageActor.$anonfun$callback$1$adapted(GraphStage.scala:202)
+	at akka.stream.impl.fusing.GraphInterpreter.runAsyncInput(GraphInterpreter.scala:466)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:497)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:599)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:768)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:783)
+	at akka.actor.Actor.aroundReceive(Actor.scala:534)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:532)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:690)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:573)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:543)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:269)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:230)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:242)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+2026-03-05 00:59:01,310 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-03-05 00:59:01,313 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-03-05 00:59:01,320 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-17 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-03-05 00:59:01,339 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Running provided shutdown stop hooks
+2026-03-05 01:07:09,696 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-03-05 01:07:09,976 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-03-05 01:07:10,268 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-03-05 01:07:10,503 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-03-05 01:07:21,109 [ERROR] from akka.stream.impl.ActorRefSource in application-akka.actor.default-dispatcher-14 - Failing because buffer is full and overflowStrategy is: [Fail] in stream [actorRefSource]
+2026-03-05 01:07:21,114 [ERROR] from play.core.server.common.WebSocketFlowHandler in application-akka.actor.default-dispatcher-14 - WebSocket flow threw exception
+akka.stream.BufferOverflowException: Buffer overflow (max capacity was: 16)!
+	at akka.stream.impl.ActorRefSource$$anon$1.$anonfun$ref$1(ActorRefSource.scala:132)
+	at akka.stream.impl.ActorRefSource$$anon$1.$anonfun$ref$1$adapted(ActorRefSource.scala:56)
+	at akka.stream.stage.GraphStageLogic$StageActor.internalReceive(GraphStage.scala:243)
+	at akka.stream.stage.GraphStageLogic$StageActor.$anonfun$callback$1(GraphStage.scala:202)
+	at akka.stream.stage.GraphStageLogic$StageActor.$anonfun$callback$1$adapted(GraphStage.scala:202)
+	at akka.stream.impl.fusing.GraphInterpreter.runAsyncInput(GraphInterpreter.scala:466)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:497)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:599)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:768)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:783)
+	at akka.actor.Actor.aroundReceive(Actor.scala:534)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:532)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:690)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:573)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:543)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:269)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:230)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:242)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+2026-03-05 01:12:36,624 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-03-05 01:12:36,626 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-03-05 01:12:36,634 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-03-05 01:12:36,647 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-2 - Running provided shutdown stop hooks
+2026-03-05 01:21:05,557 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-03-05 01:21:05,822 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-03-05 01:21:06,082 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-03-05 01:21:06,317 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-03-05 01:21:40,318 [ERROR] from akka.stream.impl.ActorRefSource in application-akka.actor.default-dispatcher-11 - Failing because buffer is full and overflowStrategy is: [Fail] in stream [actorRefSource]
+2026-03-05 01:21:40,327 [ERROR] from play.core.server.common.WebSocketFlowHandler in application-akka.actor.default-dispatcher-11 - WebSocket flow threw exception
+akka.stream.BufferOverflowException: Buffer overflow (max capacity was: 16)!
+	at akka.stream.impl.ActorRefSource$$anon$1.$anonfun$ref$1(ActorRefSource.scala:132)
+	at akka.stream.impl.ActorRefSource$$anon$1.$anonfun$ref$1$adapted(ActorRefSource.scala:56)
+	at akka.stream.stage.GraphStageLogic$StageActor.internalReceive(GraphStage.scala:243)
+	at akka.stream.stage.GraphStageLogic$StageActor.$anonfun$callback$1(GraphStage.scala:202)
+	at akka.stream.stage.GraphStageLogic$StageActor.$anonfun$callback$1$adapted(GraphStage.scala:202)
+	at akka.stream.impl.fusing.GraphInterpreter.runAsyncInput(GraphInterpreter.scala:466)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:497)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:599)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:768)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:783)
+	at akka.actor.Actor.aroundReceive(Actor.scala:534)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:532)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:690)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:573)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:543)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:269)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:230)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:242)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+2026-03-05 01:22:06,247 [ERROR] from akka.stream.impl.ActorRefSource in application-akka.actor.default-dispatcher-15 - Failing because buffer is full and overflowStrategy is: [Fail] in stream [actorRefSource]
+2026-03-05 01:22:06,248 [ERROR] from play.core.server.common.WebSocketFlowHandler in application-akka.actor.default-dispatcher-8 - WebSocket flow threw exception
+akka.stream.BufferOverflowException: Buffer overflow (max capacity was: 16)!
+	at akka.stream.impl.ActorRefSource$$anon$1.$anonfun$ref$1(ActorRefSource.scala:132)
+	at akka.stream.impl.ActorRefSource$$anon$1.$anonfun$ref$1$adapted(ActorRefSource.scala:56)
+	at akka.stream.stage.GraphStageLogic$StageActor.internalReceive(GraphStage.scala:243)
+	at akka.stream.stage.GraphStageLogic$StageActor.$anonfun$callback$1(GraphStage.scala:202)
+	at akka.stream.stage.GraphStageLogic$StageActor.$anonfun$callback$1$adapted(GraphStage.scala:202)
+	at akka.stream.impl.fusing.GraphInterpreter.runAsyncInput(GraphInterpreter.scala:466)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:497)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:599)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:768)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:783)
+	at akka.actor.Actor.aroundReceive(Actor.scala:534)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:532)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:690)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:573)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:543)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:269)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:230)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:242)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+2026-03-05 01:25:26,057 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-03-05 01:25:26,060 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-03-05 01:25:26,068 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-17 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-03-05 01:25:26,083 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-21 - Running provided shutdown stop hooks
+2026-03-05 03:36:12,777 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-03-05 03:36:13,101 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-03-05 03:36:13,380 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-03-05 03:36:13,650 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-03-05 03:38:14,211 [ERROR] from akka.stream.impl.ActorRefSource in application-akka.actor.default-dispatcher-14 - Failing because buffer is full and overflowStrategy is: [Fail] in stream [actorRefSource]
+2026-03-05 03:38:14,216 [ERROR] from play.core.server.common.WebSocketFlowHandler in application-akka.actor.default-dispatcher-14 - WebSocket flow threw exception
+akka.stream.BufferOverflowException: Buffer overflow (max capacity was: 16)!
+	at akka.stream.impl.ActorRefSource$$anon$1.$anonfun$ref$1(ActorRefSource.scala:132)
+	at akka.stream.impl.ActorRefSource$$anon$1.$anonfun$ref$1$adapted(ActorRefSource.scala:56)
+	at akka.stream.stage.GraphStageLogic$StageActor.internalReceive(GraphStage.scala:243)
+	at akka.stream.stage.GraphStageLogic$StageActor.$anonfun$callback$1(GraphStage.scala:202)
+	at akka.stream.stage.GraphStageLogic$StageActor.$anonfun$callback$1$adapted(GraphStage.scala:202)
+	at akka.stream.impl.fusing.GraphInterpreter.runAsyncInput(GraphInterpreter.scala:466)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:497)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:599)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:768)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:783)
+	at akka.actor.Actor.aroundReceive(Actor.scala:534)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:532)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:690)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:573)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:543)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:269)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:230)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:242)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+2026-03-05 03:38:44,528 [ERROR] from akka.stream.impl.ActorRefSource in application-akka.actor.default-dispatcher-13 - Failing because buffer is full and overflowStrategy is: [Fail] in stream [actorRefSource]
+2026-03-05 03:38:44,529 [ERROR] from play.core.server.common.WebSocketFlowHandler in application-akka.actor.default-dispatcher-13 - WebSocket flow threw exception
+akka.stream.BufferOverflowException: Buffer overflow (max capacity was: 16)!
+	at akka.stream.impl.ActorRefSource$$anon$1.$anonfun$ref$1(ActorRefSource.scala:132)
+	at akka.stream.impl.ActorRefSource$$anon$1.$anonfun$ref$1$adapted(ActorRefSource.scala:56)
+	at akka.stream.stage.GraphStageLogic$StageActor.internalReceive(GraphStage.scala:243)
+	at akka.stream.stage.GraphStageLogic$StageActor.$anonfun$callback$1(GraphStage.scala:202)
+	at akka.stream.stage.GraphStageLogic$StageActor.$anonfun$callback$1$adapted(GraphStage.scala:202)
+	at akka.stream.impl.fusing.GraphInterpreter.runAsyncInput(GraphInterpreter.scala:466)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:497)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:599)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:768)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:783)
+	at akka.actor.Actor.aroundReceive(Actor.scala:534)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:532)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:690)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:573)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:543)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:269)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:230)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:242)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+2026-03-05 03:39:52,790 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-03-05 03:39:52,791 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-03-05 03:39:52,796 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-20 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-03-05 03:39:52,823 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-18 - Running provided shutdown stop hooks
+2026-03-05 05:08:51,371 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-03-05 05:08:51,632 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-03-05 05:08:51,872 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-03-05 05:08:52,106 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-03-05 05:09:09,508 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-03-05 05:09:09,511 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-03-05 05:09:09,519 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-03-05 05:09:09,535 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-33 - Running provided shutdown stop hooks
+2026-03-18 01:53:47,923 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2026-03-18 01:53:48,197 [INFO] from org.hibernate.validator.internal.util.Version in main - HV000001: Hibernate Validator 6.1.0.Final
+2026-03-18 01:53:48,454 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2026-03-18 01:53:48,684 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2026-03-18 01:57:33,185 [ERROR] from akka.stream.impl.ActorRefSource in application-akka.actor.default-dispatcher-20 - Failing because buffer is full and overflowStrategy is: [Fail] in stream [actorRefSource]
+2026-03-18 01:57:33,196 [ERROR] from play.core.server.common.WebSocketFlowHandler in application-akka.actor.default-dispatcher-8 - WebSocket flow threw exception
+akka.stream.BufferOverflowException: Buffer overflow (max capacity was: 16)!
+	at akka.stream.impl.ActorRefSource$$anon$1.$anonfun$ref$1(ActorRefSource.scala:132)
+	at akka.stream.impl.ActorRefSource$$anon$1.$anonfun$ref$1$adapted(ActorRefSource.scala:56)
+	at akka.stream.stage.GraphStageLogic$StageActor.internalReceive(GraphStage.scala:243)
+	at akka.stream.stage.GraphStageLogic$StageActor.$anonfun$callback$1(GraphStage.scala:202)
+	at akka.stream.stage.GraphStageLogic$StageActor.$anonfun$callback$1$adapted(GraphStage.scala:202)
+	at akka.stream.impl.fusing.GraphInterpreter.runAsyncInput(GraphInterpreter.scala:466)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:497)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:599)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:768)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:783)
+	at akka.actor.Actor.aroundReceive(Actor.scala:534)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:532)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:690)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:573)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:543)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:269)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:230)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:242)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+2026-03-18 01:57:37,823 [ERROR] from akka.stream.impl.ActorRefSource in application-akka.actor.default-dispatcher-10 - Failing because buffer is full and overflowStrategy is: [Fail] in stream [actorRefSource]
+2026-03-18 01:57:37,824 [ERROR] from play.core.server.common.WebSocketFlowHandler in application-akka.actor.default-dispatcher-10 - WebSocket flow threw exception
+akka.stream.BufferOverflowException: Buffer overflow (max capacity was: 16)!
+	at akka.stream.impl.ActorRefSource$$anon$1.$anonfun$ref$1(ActorRefSource.scala:132)
+	at akka.stream.impl.ActorRefSource$$anon$1.$anonfun$ref$1$adapted(ActorRefSource.scala:56)
+	at akka.stream.stage.GraphStageLogic$StageActor.internalReceive(GraphStage.scala:243)
+	at akka.stream.stage.GraphStageLogic$StageActor.$anonfun$callback$1(GraphStage.scala:202)
+	at akka.stream.stage.GraphStageLogic$StageActor.$anonfun$callback$1$adapted(GraphStage.scala:202)
+	at akka.stream.impl.fusing.GraphInterpreter.runAsyncInput(GraphInterpreter.scala:466)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:497)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:599)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:768)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:783)
+	at akka.actor.Actor.aroundReceive(Actor.scala:534)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:532)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:690)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:573)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:543)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:269)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:230)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:242)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+2026-03-18 01:57:49,886 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in Thread-0 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 2147508000 milliseconds timeout
+2026-03-18 01:57:49,887 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Stopping Akka HTTP server...
+2026-03-18 01:57:49,891 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-3 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2026-03-18 01:57:49,906 [INFO] from play.core.server.AkkaHttpServer in application-akka.actor.internal-dispatcher-38 - Running provided shutdown stop hooks

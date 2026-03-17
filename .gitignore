@@ -1,24 +1,6 @@
-# ---------------------------------------
-# Main Exclusions
-# ---------------------------------------
-
-# Java Build Target
 target/**
 
-# App Assets
-
-
-# Dependancy Cache
 null/**
-
-# SBT Components
-logs/**
-project/**
-public/**
-sbt-dist/**
-scripts/**
-sbt
-sbt.bat
 
 # ---------------------------------------
 # Additional Files from IDE's
