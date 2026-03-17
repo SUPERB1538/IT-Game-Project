@@ -1,7 +1,11 @@
 package services;
 
 import akka.actor.ActorRef;
-import structures.*;
+import structures.CardInstance;
+import structures.GameState;
+import structures.Hand;
+import structures.PlayerState;
+import structures.UnitEntity;
 import structures.basic.Position;
 
 import java.util.HashSet;
@@ -86,10 +90,6 @@ public class VisualFeedbackManager {
 
     public void highlightHandCard(ActorRef out, Hand hand, int selectedPos) {
         if (out == null || hand == null) return;
-
-        for (int pos = Hand.MIN_SLOT; pos <= Hand.MAX_SLOT; pos++) {
-            ui.deleteCardSlot(out, pos);
-        }
 
         for (int pos = Hand.MIN_SLOT; pos <= Hand.MAX_SLOT; pos++) {
             CardInstance ci = hand.getBySlot(pos);
@@ -178,28 +178,17 @@ public class VisualFeedbackManager {
     public void highlightAttackTargets(ActorRef out, GameState gameState, UnitEntity attacker) {
         if (out == null || gameState == null || attacker == null || attacker.getPosition() == null) return;
 
-        int ax = attacker.getPosition().getTilex();
-        int ay = attacker.getPosition().getTiley();
+        gameState.getHighlightedAttackTiles().clear();
 
-        for (int dx = -1; dx <= 1; dx++) {
-            for (int dy = -1; dy <= 1; dy++) {
-                if (dx == 0 && dy == 0) continue;
+        CombatResolver combatResolver = new CombatResolver();
+        Set<Position> legalTargets = combatResolver.computeLegalAttackTargets(gameState, attacker);
 
-                Position p = new Position();
-                p.setTilex(ax + dx);
-                p.setTiley(ay + dy);
+        for (Position p : legalTargets) {
+            int x = p.getTilex();
+            int y = p.getTiley();
 
-                if (!gameState.getBoard().isValidPosition(p)) continue;
-
-                UnitEntity maybe = gameState.getBoard().getUnitAt(p).orElse(null);
-                if (maybe == null) continue;
-                if (maybe.getOwnerPlayerId() == attacker.getOwnerPlayerId()) continue;
-
-                int x = p.getTilex();
-                int y = p.getTiley();
-                ui.drawTileMode(out, x, y, CommandDispatcher.TILE_ATTACK_HIGHLIGHT);
-                gameState.getHighlightedAttackTiles().add(x + "," + y);
-            }
+            ui.drawTileMode(out, x, y, CommandDispatcher.TILE_ATTACK_HIGHLIGHT);
+            gameState.getHighlightedAttackTiles().add(x + "," + y);
         }
     }
 
@@ -271,5 +260,4 @@ public class VisualFeedbackManager {
         if (out == null || gameState == null) return;
         GameRulesEngine.clearAllHighlightsUI(out, gameState);
     }
-
 }

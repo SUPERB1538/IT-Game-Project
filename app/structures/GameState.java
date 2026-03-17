@@ -1,4 +1,4 @@
-package structures;
+                       package structures;
 
 import structures.basic.Player;
 

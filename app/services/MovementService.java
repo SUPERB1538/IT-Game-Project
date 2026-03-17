@@ -12,8 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Movement logic extracted from GameRulesEngine (Phase 2 Step 2.2).
- * Keeps behaviour identical to your previous movement code.
+ * Movement logic extracted from GameRulesEngine.
  */
 public class MovementService {
 
@@ -45,12 +44,36 @@ public class MovementService {
         return positions;
     }
 
-    /**
-     * Move the currently selected unit to a target tile if allowed.
-     * Returns true if the move executed, false otherwise.
-     *
-     * Behaviour matches your old GameRulesEngine.moveSelectedUnitTo(...).
-     */
+    public List<Position> computeMovesForUnit(GameState gameState, UnitEntity unit) {
+        List<Position> positions = new ArrayList<>();
+        if (gameState == null || unit == null || unit.getPosition() == null) return positions;
+
+        Position from = unit.getPosition();
+
+        // PROVOKE: adjacent enemy provoke means no movement allowed
+        if (hasAdjacentEnemyProvoke(gameState, unit)) {
+            return positions;
+        }
+
+        // FLYING: any empty tile
+        if (unit.hasKeyword("FLYING")) {
+        	for (int x = 1; x <= 9; x++) {
+        	    for (int y = 1; y <= 5; y++) {
+                    Position p = tilePos(x, y);
+
+                    if (from.getTilex() == x && from.getTiley() == y) continue;
+                    if (!gameState.getBoard().isValidPosition(p)) continue;
+                    if (gameState.getBoard().isOccupied(p)) continue;
+
+                    positions.add(p);
+                }
+            }
+            return positions;
+        }
+
+        return computeDefaultMoves(gameState, from);
+    }
+
     public boolean moveSelectedUnitTo(ActorRef out, GameState gameState, Position targetPos, Tile targetTile) {
 
         Integer selectedId = gameState.getSelectedUnitId();
@@ -65,20 +88,21 @@ public class MovementService {
             return false;
         }
 
+        if (hasAdjacentEnemyProvoke(gameState, unit)) {
+            ui.notifyP1(out, "This unit cannot move while next to an enemy Provoke unit", 2);
+            return false;
+        }
+
         if (!gameState.getBoard().isValidPosition(targetPos)) return false;
         if (gameState.getBoard().isOccupied(targetPos)) return false;
 
         Position from = unit.getPosition();
 
-        // Update backend occupancy first
         gameState.getBoard().moveUnit(from, targetPos);
 
-        // Sync unit position (tile + pixel via tile)
         unit.moveTo(targetTile);
-
         unit.markMoved(t);
 
-        // UI animation (same as before)
         BasicCommands.playUnitAnimation(out, unit, UnitAnimationType.move);
         BasicCommands.moveUnitToTile(out, unit, targetTile);
         BasicCommands.playUnitAnimation(out, unit, UnitAnimationType.idle);
@@ -86,9 +110,31 @@ public class MovementService {
         return true;
     }
 
-    // ----------------------------
-    // Helpers
-    // ----------------------------
+    private boolean hasAdjacentEnemyProvoke(GameState gameState, UnitEntity unit) {
+        if (gameState == null || unit == null || unit.getPosition() == null) return false;
+
+        int ux = unit.getPosition().getTilex();
+        int uy = unit.getPosition().getTiley();
+
+        for (UnitEntity other : gameState.getUnitsById().values()) {
+            if (other == null) continue;
+            if (other.isDead()) continue;
+            if (other.getOwnerPlayerId() == unit.getOwnerPlayerId()) continue;
+            if (!other.hasKeyword("PROVOKE")) continue;
+            if (other.getPosition() == null) continue;
+
+            int ox = other.getPosition().getTilex();
+            int oy = other.getPosition().getTiley();
+
+            int dx = Math.abs(ux - ox);
+            int dy = Math.abs(uy - oy);
+
+            boolean adjacent = (dx <= 1 && dy <= 1 && !(dx == 0 && dy == 0));
+            if (adjacent) return true;
+        }
+
+        return false;
+    }
 
     private void addIfValidEmpty(List<Position> out, GameState gameState, Position p) {
         if (!gameState.getBoard().isValidPosition(p)) return;

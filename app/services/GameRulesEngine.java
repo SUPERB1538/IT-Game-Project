@@ -2,10 +2,13 @@ package services;
 
 import akka.actor.ActorRef;
 import com.fasterxml.jackson.databind.JsonNode;
-import structures.*;
+import structures.GameState;
+import structures.UnitEntity;
 import structures.basic.Position;
 import structures.basic.Tile;
 import utils.BasicObjectBuilders;
+
+import java.util.Set;
 
 public class GameRulesEngine {
 
@@ -16,8 +19,8 @@ public class GameRulesEngine {
     private final CardPlayService cardPlayService = new CardPlayService();
 
     public void onTileClicked(ActorRef out, GameState gameState, JsonNode message) {
-        if (gameState.isGameOver()) return;
         if (gameState == null || gameState.getBoard() == null) return;
+        if (gameState.isGameOver()) return;
 
         int x = message.get("tilex").asInt();
         int y = message.get("tiley").asInt();
@@ -27,27 +30,22 @@ public class GameRulesEngine {
 
         UnitEntity unitAt = gameState.getBoard().getUnitAt(clickedPos).orElse(null);
 
-        // ---- Spell targeting execution/cancel ----
         if (gameState.isWaitingSpellTarget()) {
             String key = x + "," + y;
 
-            // If clicked a valid spell target: cast spell
-            if (unitAt != null && gameState.getHighlightedSpellTargets().contains(key)) {
-                cardPlayService.castSelectedSpellOnTarget(out, gameState, unitAt);
+            if (gameState.getHighlightedSpellTargets().contains(key)) {
+                cardPlayService.castSelectedSpell(out, gameState, clickedPos);
                 ui.showHumanHandUI(out, gameState);
                 return;
             }
 
-            // Otherwise: cancel spell targeting but continue normal click
             if (!gameState.getHighlightedSpellTargets().contains(key)) {
                 ui.clearSpellTargeting(out, gameState);
                 ui.showHumanHandUI(out, gameState);
                 gameState.setSelectedCardPos(null);
-                // continue normal click handling
             }
         }
 
-        // 0) Summon: selected card + summon tile
         if (gameState.getSelectedCardPos() != null && isSummonHighlighted(gameState, x, y)) {
             if (unitAt != null) {
                 ui.notifyP1(out, "Tile occupied", 2);
@@ -60,7 +58,6 @@ public class GameRulesEngine {
             return;
         }
 
-        // 1) Attack: click enemy on attack-highlight tile
         if (unitAt != null && isAttackHighlighted(gameState, x, y)) {
             Integer selectedId = gameState.getSelectedUnitId();
             if (selectedId != null) {
@@ -75,7 +72,6 @@ public class GameRulesEngine {
             return;
         }
 
-        // 2) Move: click move-highlight tile
         if (isMoveHighlighted(gameState, x, y)) {
             movementService.moveSelectedUnitTo(out, gameState, clickedPos, clickedTile);
             ui.clearAllHighlights(out, gameState);
@@ -84,7 +80,6 @@ public class GameRulesEngine {
             return;
         }
 
-        // 3) Click empty tile -> clear selection/highlights
         if (unitAt == null) {
             ui.clearAllHighlights(out, gameState);
             gameState.setSelectedUnitId(null);
@@ -92,9 +87,7 @@ public class GameRulesEngine {
             return;
         }
 
-        // 4) Click friendly unit -> re-select + re-highlight
         if (unitAt.getOwnerPlayerId() == gameState.getCurrentPlayerId()) {
-
             ui.clearAllHighlights(out, gameState);
 
             gameState.setSelectedUnitId(null);
@@ -102,21 +95,21 @@ public class GameRulesEngine {
 
             gameState.setSelectedUnitId(unitAt.getId());
 
-            int t = gameState.getGlobalTurnNumber();
-            boolean canMove = unitAt.canMove(t);
-            boolean canAttack = unitAt.canAttack(t);
+            int currentTurn = gameState.getGlobalTurnNumber();
+            boolean canMove = unitAt.canMove(currentTurn);
+            boolean canAttack = unitAt.canAttack(currentTurn);
 
             if (!canMove && !canAttack) {
                 ui.highlightCenterTile(out, gameState, unitAt.getPosition());
                 ui.showHumanHandUI(out, gameState);
-                ui.notifyP1(out, "Summoned units can't move/attack this turn", 2);
+                ui.notifyP1(out, "This unit cannot move or attack right now", 2);
                 return;
             }
 
             ui.hideHumanHandUI(out, gameState);
 
             if (canMove) {
-                ui.highlightMoveTiles(out, gameState, movementService.computeDefaultMoves(gameState, unitAt.getPosition()));
+                ui.highlightMoveTiles(out, gameState, movementService.computeMovesForUnit(gameState, unitAt));
             }
 
             ui.highlightCenterTile(out, gameState, unitAt.getPosition());
@@ -128,15 +121,14 @@ public class GameRulesEngine {
             return;
         }
 
-        // 5) Click enemy unit (not highlighted) -> clear
         ui.clearAllHighlights(out, gameState);
         gameState.setSelectedUnitId(null);
         ui.showHumanHandUI(out, gameState);
     }
 
     public void onCardClicked(ActorRef out, GameState gameState, JsonNode message) {
+        if (gameState == null) return;
         if (gameState.isGameOver()) return;
-        if (gameState == null || message == null) return;
 
         if (message.has("tilex") && message.has("tiley")) {
             onTileClicked(out, gameState, message);
@@ -150,8 +142,8 @@ public class GameRulesEngine {
     }
 
     public void onOtherClicked(ActorRef out, GameState gameState, JsonNode message) {
-        if (gameState.isGameOver()) return;
         if (gameState == null) return;
+        if (gameState.isGameOver()) return;
 
         ui.clearSpellTargeting(out, gameState);
         ui.clearAllHighlights(out, gameState);

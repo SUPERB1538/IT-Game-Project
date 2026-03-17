@@ -7,27 +7,28 @@ import structures.basic.UnitAnimationSet;
 
 import java.util.Objects;
 
-
 public class UnitEntity extends Unit {
 
     private int maxHealth;
     private int health;
     private int attack;
-
-    // Optional: ownership / controlling player id (keep simple for now)
     private int ownerPlayerId;
+
+    // spell / artifact / keyword related state
+    private boolean stunned = false;
+    private boolean hornOfForsakenEquipped = false;
+
+    // keyword system
+    private final java.util.Set<String> keywords = new java.util.HashSet<>();
 
     public UnitEntity() {
         super();
     }
 
-
-    // -----------------------------
-    // Per-turn action limits
-    // -----------------------------
-    private int summonedOnTurn = -1;     // turn number when the unit was summoned
-    private int lastTurnMoved = -1;      // turn number when moved
-    private int lastTurnAttacked = -1;   // turn number when attacked
+    // per-turn action limits
+    private int summonedOnTurn = -1;
+    private int lastTurnMoved = -1;
+    private int lastTurnAttacked = -1;
 
     public UnitEntity(int id,
                       UnitAnimationSet animations,
@@ -45,12 +46,27 @@ public class UnitEntity extends Unit {
         this.health = maxHealth;
         this.attack = attack;
         this.ownerPlayerId = ownerPlayerId;
-
     }
 
-    // -----------------------------
-    // Basic stats
-    // -----------------------------
+    public boolean isStunned() {
+        return stunned;
+    }
+
+    public void setStunned(boolean stunned) {
+        this.stunned = stunned;
+    }
+
+    public boolean hasHornOfForsaken() {
+        return hornOfForsakenEquipped;
+    }
+
+    public void setHornOfForsaken(boolean equipped) {
+        this.hornOfForsakenEquipped = equipped;
+    }
+
+    public int getMaxHealth() {
+        return maxHealth;
+    }
 
     public void setMaxHealth(int maxHealth) {
         if (maxHealth <= 0) throw new IllegalArgumentException("maxHealth must be > 0");
@@ -63,7 +79,6 @@ public class UnitEntity extends Unit {
     }
 
     public void setHealth(int health) {
-        // clamp
         this.health = Math.max(0, Math.min(health, maxHealth));
     }
 
@@ -107,14 +122,14 @@ public class UnitEntity extends Unit {
     }
 
     public boolean canMove(int currentTurn) {
-        // cannot act on summon turn
-        if (isSummonedThisTurn(currentTurn)) return false;
+        if (stunned) return false;
+        if (isSummonedThisTurn(currentTurn) && !hasKeyword("RUSH")) return false;
         return lastTurnMoved != currentTurn;
     }
 
     public boolean canAttack(int currentTurn) {
-        // cannot act on summon turn
-        if (isSummonedThisTurn(currentTurn)) return false;
+        if (stunned) return false;
+        if (isSummonedThisTurn(currentTurn) && !hasKeyword("RUSH")) return false;
         return lastTurnAttacked != currentTurn;
     }
 
@@ -127,5 +142,26 @@ public class UnitEntity extends Unit {
     }
 
     public void resetTurnFlags(int currentTurn) {
+        this.stunned = false;
+    }
+
+    public boolean hasKeyword(String keyword) {
+        return keyword != null && keywords.contains(keyword.toUpperCase());
+    }
+
+    public void addKeyword(String keyword) {
+        if (keyword != null) {
+            keywords.add(keyword.toUpperCase());
+        }
+    }
+
+    public void removeKeyword(String keyword) {
+        if (keyword != null) {
+            keywords.remove(keyword.toUpperCase());
+        }
+    }
+
+    public java.util.Set<String> getKeywords() {
+        return keywords;
     }
 }
