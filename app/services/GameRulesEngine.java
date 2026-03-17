@@ -35,13 +35,11 @@ public class GameRulesEngine {
 
             if (gameState.getHighlightedSpellTargets().contains(key)) {
                 cardPlayService.castSelectedSpell(out, gameState, clickedPos);
-                ui.showHumanHandUI(out, gameState);
                 return;
             }
 
             if (!gameState.getHighlightedSpellTargets().contains(key)) {
                 ui.clearSpellTargeting(out, gameState);
-                ui.showHumanHandUI(out, gameState);
                 gameState.setSelectedCardPos(null);
             }
         }
@@ -54,7 +52,6 @@ public class GameRulesEngine {
             }
             ui.clearAllHighlights(out, gameState);
             gameState.setSelectedCardPos(null);
-            ui.showHumanHandUI(out, gameState);
             return;
         }
 
@@ -68,7 +65,6 @@ public class GameRulesEngine {
             }
             ui.clearAllHighlights(out, gameState);
             gameState.setSelectedUnitId(null);
-            ui.showHumanHandUI(out, gameState);
             return;
         }
 
@@ -76,14 +72,12 @@ public class GameRulesEngine {
             movementService.moveSelectedUnitTo(out, gameState, clickedPos, clickedTile);
             ui.clearAllHighlights(out, gameState);
             gameState.setSelectedUnitId(null);
-            ui.showHumanHandUI(out, gameState);
             return;
         }
 
         if (unitAt == null) {
             ui.clearAllHighlights(out, gameState);
             gameState.setSelectedUnitId(null);
-            ui.showHumanHandUI(out, gameState);
             return;
         }
 
@@ -101,12 +95,9 @@ public class GameRulesEngine {
 
             if (!canMove && !canAttack) {
                 ui.highlightCenterTile(out, gameState, unitAt.getPosition());
-                ui.showHumanHandUI(out, gameState);
                 ui.notifyP1(out, "This unit cannot move or attack right now", 2);
                 return;
             }
-
-            ui.hideHumanHandUI(out, gameState);
 
             if (canMove) {
                 ui.highlightMoveTiles(out, gameState, movementService.computeMovesForUnit(gameState, unitAt));
@@ -123,7 +114,6 @@ public class GameRulesEngine {
 
         ui.clearAllHighlights(out, gameState);
         gameState.setSelectedUnitId(null);
-        ui.showHumanHandUI(out, gameState);
     }
 
     public void onCardClicked(ActorRef out, GameState gameState, JsonNode message) {
@@ -150,8 +140,6 @@ public class GameRulesEngine {
 
         gameState.setSelectedUnitId(null);
         gameState.setSelectedCardPos(null);
-
-        ui.showHumanHandUI(out, gameState);
     }
 
     private boolean isMoveHighlighted(GameState s, int x, int y) {

@@ -76,14 +76,6 @@ public class CommandDispatcher {
         vfm().cancelSpellTargeting(out, gameState);
     }
 
-    public void hideHumanHandUI(ActorRef out, GameState gameState) {
-        vfm().hideHumanHandUI(out, gameState);
-    }
-
-    public void showHumanHandUI(ActorRef out, GameState gameState) {
-        vfm().showHumanHandUI(out, gameState);
-    }
-
     public void redrawHandNormal(ActorRef out, GameState gameState) {
         vfm().redrawHandNormal(out, gameState);
     }

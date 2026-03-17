@@ -36,40 +36,6 @@ public class VisualFeedbackManager {
     // Hand visuals
     // ----------------------------
 
-    public void hideHumanHandUI(ActorRef out, GameState gameState) {
-        if (out == null || gameState == null) return;
-        if (gameState.getCurrentPlayerId() != 1) return;
-        if (gameState.isHandHidden()) return;
-
-        for (int pos = Hand.MIN_SLOT; pos <= Hand.MAX_SLOT; pos++) {
-            ui.deleteCardSlot(out, pos);
-        }
-        gameState.setHandHidden(true);
-    }
-
-    public void showHumanHandUI(ActorRef out, GameState gameState) {
-        if (out == null || gameState == null) return;
-        if (!gameState.isHandHidden()) return;
-
-        PlayerState p1 = gameState.getP1State();
-        if (p1 == null || p1.getHand() == null) {
-            gameState.setHandHidden(false);
-            return;
-        }
-
-        for (int pos = Hand.MIN_SLOT; pos <= Hand.MAX_SLOT; pos++) {
-            ui.deleteCardSlot(out, pos);
-        }
-
-        Hand hand = p1.getHand();
-        for (int pos = Hand.MIN_SLOT; pos <= Hand.MAX_SLOT; pos++) {
-            CardInstance ci = hand.getBySlot(pos);
-            if (ci != null) ui.drawHandCard(out, ci, pos, CommandDispatcher.CARD_NORMAL);
-        }
-
-        gameState.setHandHidden(false);
-    }
-
     public void redrawHandNormal(ActorRef out, GameState gameState) {
         if (out == null || gameState == null) return;
         if (gameState.isHandHidden()) return;

@@ -18,8 +18,8 @@ public class GameInitializationService {
         gameState.setBoard(board);
 
         // 2) Draw tiles
-        for (int x = 1; x <= BOARD_W; x++) {
-            for (int y = 1; y <= BOARD_H; y++) {
+        for (int x = 0; x < BOARD_W; x++) {
+            for (int y = 0; y < BOARD_H; y++) {
                 Tile tile = BasicObjectBuilders.loadTile(x, y);
                 BasicCommands.drawTile(out, tile, 0);
             }
@@ -32,8 +32,8 @@ public class GameInitializationService {
         gameState.setPlayer2(p2);
 
         // 4) Spawn tiles per rules: Human at (2,3), AI mirrored at (8,3)
-        Tile p1Spawn = BasicObjectBuilders.loadTile(2, 3);
-        Tile p2Spawn = BasicObjectBuilders.loadTile(8, 3);
+        Tile p1Spawn = BasicObjectBuilders.loadTile(1, 2);
+        Tile p2Spawn = BasicObjectBuilders.loadTile(7, 2);
 
         // 5) Load avatar unit visuals from config
         AvatarUnit p1Avatar = (AvatarUnit) BasicObjectBuilders.loadUnit(

@@ -57,8 +57,8 @@ public class MovementService {
 
         // FLYING: any empty tile
         if (unit.hasKeyword("FLYING")) {
-        	for (int x = 1; x <= 9; x++) {
-        	    for (int y = 1; y <= 5; y++) {
+            for (int x = 0; x < 9; x++) {
+                for (int y = 0; y < 5; y++) {
                     Position p = tilePos(x, y);
 
                     if (from.getTilex() == x && from.getTiley() == y) continue;

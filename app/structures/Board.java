@@ -28,7 +28,7 @@ public class Board {
         Objects.requireNonNull(p, "Position cannot be null.");
         int x = p.getTilex();
         int y = p.getTiley();
-        return x >= 1 && x <= width && y >= 1 && y <= height;
+        return x >= 0 && x < width && y >= 0 && y < height;
     }
 
     public boolean isValidPosition(Position p) {
@@ -84,8 +84,8 @@ public class Board {
     private void requireValid(Position p) {
         if (!isValidPosition(p)) {
             throw new IllegalArgumentException(
-                    "Invalid tile position (1-based): (" + p.getTilex() + "," + p.getTiley() + "). " +
-                            "Expected x in [1.." + width + "], y in [1.." + height + "]."
+                    "Invalid tile position (0-based): (" + p.getTilex() + "," + p.getTiley() + "). " +
+                            "Expected x in [0.." + (width-1) + "], y in [1.." + height + "]."
             );
         }
     }

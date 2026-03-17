@@ -53,14 +53,12 @@ public class TargetingService {
         }
         // Target: Empty Board Tiles (Standard 9x5 grid)
         else if (key.contains("WRAITHLING_SWARM")) {
-            // Person B: Use 1-based indexing (1-9, 1-5) to match Board logic
-            for (int x = 1; x <= 9; x++) {
-                for (int y = 1; y <= 5; y++) {
+            for (int x = 0; x < 9; x++) {
+                for (int y = 0; y < 5; y++) {
                     Position p = new Position();
                     p.setTilex(x);
                     p.setTiley(y);
-                    
-                    // Verify the tile is within bounds and unoccupied
+
                     if (gameState.getBoard() != null && gameState.getBoard().isValidPosition(p)) {
                         if (!gameState.getBoard().isOccupied(p)) {
                             targets.add(p);

@@ -80,7 +80,9 @@ public class EffectResolver {
             
             for (int dx = -1; dx <= 1 && summonsCount < 3; dx++) {
                 for (int dy = -1; dy <= 1 && summonsCount < 3; dy++) {
-                    Position p = new Position(0, 0, targetPos.getTilex() + dx, targetPos.getTiley() + dy);
+                    Position p = new Position();
+                    p.setTilex(targetPos.getTilex() + dx);
+                    p.setTiley(targetPos.getTiley() + dy);
                     if (gameState.getBoard().isValidPosition(p) && !gameState.getBoard().isOccupied(p)) {
                         
                         // Person B: Dynamically load a Tile for each valid spawn position in the AoE loop
