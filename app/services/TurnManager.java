@@ -46,7 +46,9 @@ public class TurnManager {
 
         // 5) AI flow: AI takes its whole turn immediately, then return to human
         if (next == 2) {
+            try { Thread.sleep(200); } catch (Exception ignored) {}
             AIDecisionEngine.playTurn(out, gameState);
+            try { Thread.sleep(200); } catch (Exception ignored) {}
 
             if (gameState.isGameOver()) return;
             manaService.clearUnspentManaAndUpdateUI(out, gameState, 2);

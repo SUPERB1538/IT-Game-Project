@@ -1,2 +1,0 @@
-# ITSDTeamProject-0
-

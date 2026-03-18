@@ -8,7 +8,7 @@ import java.util.List;            // Person B: Required for dynamic target lists
 import java.util.Objects;
 
 /**
- * Person B: Service responsible for the card-playing workflow.
+ * Service responsible for the card-playing workflow.
  * This version integrates TargetingService to decouple targeting rules from the play flow.
  */
 public class CardPlayService {
@@ -81,7 +81,7 @@ public class CardPlayService {
     }
 
     /**
-     * Person B: Finalized spell casting method.
+     * Finalized spell casting method.
      * Supports targeting positions rather than just units to allow for ground-targeted spells.
      */
     public boolean castSelectedSpell(ActorRef out, GameState gameState, Position targetPos) {
@@ -102,14 +102,16 @@ public class CardPlayService {
         }
         BasicCommands.setPlayer1Mana(out, gameState.getPlayer1());
 
-        // Person B: Dynamically resolve if a unit exists at the target position.
         UnitEntity targetUnit = gameState.getBoard().getUnitAt(targetPos).orElse(null);
 
-        // Person B: Forward to the resolver. 
         effectResolver.applySpell(out, gameState, spellCard, targetUnit, targetPos);
+
+        try { Thread.sleep(100); } catch (Exception ignored) {}
 
         hand.removeFromSlot(spellPos);
         compactHandLeft(hand);
+
+        try { Thread.sleep(80); } catch (Exception ignored) {}
         ui.redrawHandNormal(out, gameState);
 
         gameState.setSelectedCardPos(null);
