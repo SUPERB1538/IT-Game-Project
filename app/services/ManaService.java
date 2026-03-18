@@ -4,6 +4,9 @@ import akka.actor.ActorRef;
 import commands.BasicCommands;
 import structures.GameState;
 
+/**
+ * Manages player mana updates and synchronises mana values with the UI.
+ */
 public class ManaService {
 
     public void clearUnspentManaAndUpdateUI(ActorRef out, GameState gameState, int playerId) {

@@ -10,6 +10,10 @@ import structures.basic.UnitAnimationType;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Resolves combat interactions between units, including attack validation,
+ * damage exchange, counterattacks, and death handling.
+ */
 public class CombatResolver {
 
     private final CommandDispatcher ui = new CommandDispatcher();
@@ -27,7 +31,9 @@ public class CombatResolver {
             return false;
         }
 
+        // attacker attack animation
         BasicCommands.playUnitAnimation(out, attacker, UnitAnimationType.attack);
+        sleep(300);
 
         damageService.dealDamage(out, gameState, defender, attacker.getAttack());
         if (attacker.getAttack() > 0) {
@@ -35,29 +41,40 @@ public class CombatResolver {
         }
         attacker.markAttacked(gameState.getGlobalTurnNumber());
 
+        // defender dead after being attacked
         if (defender.isDead()) {
+            sleep(150);
+
             if (defender instanceof structures.AvatarUnit) {
                 gameEndChecker.checkAndHandle(out, gameState);
+                sleep(150);
                 BasicCommands.playUnitAnimation(out, attacker, UnitAnimationType.idle);
                 return true;
             }
 
             unitRemovalService.removeUnit(out, gameState, defender, "Unit destroyed");
+            sleep(150);
             BasicCommands.playUnitAnimation(out, attacker, UnitAnimationType.idle);
             return true;
         }
 
+        // defender counterattacks
         BasicCommands.playUnitAnimation(out, defender, UnitAnimationType.attack);
+        sleep(300);
 
         damageService.dealDamage(out, gameState, attacker, defender.getAttack());
         if (defender.getAttack() > 0) {
             triggerSystem.onUnitDealtDamage(out, gameState, defender, attacker);
         }
 
+        // attacker dead after counterattack
         if (attacker.isDead()) {
+            sleep(150);
+
             if (attacker instanceof structures.AvatarUnit) {
                 gameEndChecker.checkAndHandle(out, gameState);
                 if (!defender.isDead()) {
+                    sleep(150);
                     BasicCommands.playUnitAnimation(out, defender, UnitAnimationType.idle);
                 }
                 return true;
@@ -65,14 +82,25 @@ public class CombatResolver {
 
             unitRemovalService.removeUnit(out, gameState, attacker, "Unit destroyed");
             if (!defender.isDead()) {
+                sleep(150);
                 BasicCommands.playUnitAnimation(out, defender, UnitAnimationType.idle);
             }
             return true;
         }
 
+        // both survive
+        sleep(150);
         BasicCommands.playUnitAnimation(out, attacker, UnitAnimationType.idle);
         BasicCommands.playUnitAnimation(out, defender, UnitAnimationType.idle);
         return true;
+    }
+
+    private void sleep(long millis) {
+        try {
+            Thread.sleep(millis);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
     }
 
     public boolean canAttackTarget(GameState gameState, UnitEntity attacker, UnitEntity defender) {

@@ -7,6 +7,10 @@ import structures.basic.Player;
 import structures.basic.Tile;
 import utils.BasicObjectBuilders;
 
+/**
+ * Initializes the game state including board setup, players, avatars,
+ * decks, starting hands, and initial turn configuration.
+ */
 public class GameInitializationService {
     private static final int BOARD_W = 9;
     private static final int BOARD_H = 5;

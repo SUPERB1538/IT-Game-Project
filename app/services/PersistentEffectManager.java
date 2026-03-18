@@ -2,6 +2,10 @@ package services;
 
 import structures.UnitEntity;
 
+/**
+ * Applies permanent stat modifications (e.g., attack and health buffs)
+ * to units throughout the game.
+ */
 public class PersistentEffectManager {
 
     public void applyPermanentAttackBuff(UnitEntity unit, int amount) {

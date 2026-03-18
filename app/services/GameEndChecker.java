@@ -4,6 +4,10 @@ import akka.actor.ActorRef;
 import structures.AvatarUnit;
 import structures.GameState;
 
+/**
+ * Checks win/loss conditions and handles game termination logic
+ * when an avatar dies.
+ */
 public class GameEndChecker {
 
     private final CommandDispatcher ui = new CommandDispatcher();

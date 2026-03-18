@@ -10,6 +10,10 @@ import utils.BasicObjectBuilders;
 
 import java.util.Set;
 
+/**
+ * Handles user input events and coordinates game logic such as movement,
+ * combat, card play, and unit interaction.
+ */
 public class GameRulesEngine {
 
     private final CommandDispatcher ui = new CommandDispatcher();
