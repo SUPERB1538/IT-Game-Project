@@ -8,58 +8,41 @@ import structures.basic.Tile;
 import utils.BasicObjectBuilders;
 
 /**
- * Creature summoning logic. 
+ * Creature summoning logic.
  * This service handles both standard card summoning and direct token creation for spell effects.
  */
 public class SummonService {
 
     private final CommandDispatcher ui = new CommandDispatcher();
-   
+    private final TokenFactory tokenFactory = new TokenFactory();
+
     // =========================================================
     // START OF PERSON B'S ADDITION
     // =========================================================
-    
-    /**
-     * Person B: Direct summoning for spell tokens (e.g., Wraithlings). 
-     * This method allows spells to create units directly on the board without 
-     * consuming a card from the hand, essential for Wraithling Swarm and Dark Terminus.
-     */
     public void summonToken(ActorRef out, GameState gameState, String unitConfig, Position targetPos, int ownerId) {
-        UnitEntity summoned;
-        try {
-            // Person B: Load unit configuration dynamically using the global nextUnitId
-            summoned = (UnitEntity) BasicObjectBuilders.loadUnit(unitConfig, gameState.nextUnitId(), UnitEntity.class);
-        } catch (Exception e) {
-            return;
-        }
+        if (out == null || gameState == null || targetPos == null) return;
+        if (unitConfig == null) return;
 
+        if (!gameState.getBoard().isValidPosition(targetPos)) return;
+        if (gameState.getBoard().isOccupied(targetPos)) return;
+
+        UnitEntity summoned = tokenFactory.createToken(gameState, unitConfig, targetPos, ownerId);
         if (summoned == null) return;
 
-        // Person B: Set default token stats (Wraithlings are standard 1/1 units)
-        summoned.setOwnerPlayerId(ownerId);
-        summoned.setMaxHealth(1);
-        summoned.setHealth(1);
-        summoned.setAttack(1);
-        applyKeywordsForUnit(summoned, unitConfig);
-        // Person B: Bind unit to the physical board location based on target coordinates
         Tile tile = BasicObjectBuilders.loadTile(targetPos.getTilex(), targetPos.getTiley());
-        summoned.setPositionByTile(tile);
-        
-        // Person B: Enforce summoning sickness tracking for the current turn
-        summoned.setSummonedOnTurn(gameState.getGlobalTurnNumber());
 
-        // Person B: Update backend state - registry in board occupancy and global unit index
+        // Update backend state
         gameState.getBoard().putUnit(targetPos, summoned);
         gameState.addUnit(summoned);
 
-        // Person B: Synchronize frontend UI - drawing and setting stats
+        // Sync frontend UI
         try { Thread.sleep(50); } catch (Exception ignored) {}
         BasicCommands.drawUnit(out, summoned, tile);
         try { Thread.sleep(50); } catch (Exception ignored) {}
         BasicCommands.setUnitHealth(out, summoned, summoned.getHealth());
         BasicCommands.setUnitAttack(out, summoned, summoned.getAttack());
     }
-    
+
     // =========================================================
     // END OF PERSON B'S ADDITION
     // =========================================================
@@ -137,9 +120,9 @@ public class SummonService {
         summoned.setAttack(atk);
         summoned.setPositionByTile(targetTile);
         summoned.setSummonedOnTurn(gameState.getGlobalTurnNumber());
-        
+
         applyKeywordsForUnit(summoned, card.getConfigFile());
-        
+
         gameState.getBoard().putUnit(targetPos, summoned);
         gameState.addUnit(summoned);
 
@@ -152,8 +135,12 @@ public class SummonService {
 
         new TriggerSystem().onUnitSummoned(out, gameState, summoned);
 
+        try { Thread.sleep(100); } catch (Exception ignored) {}
+
         hand.removeFromSlot(handPos);
         compactHandLeft(hand);
+
+        try { Thread.sleep(80); } catch (Exception ignored) {}
         ui.redrawHandNormal(out, gameState);
 
         ui.notifyP1(out, "Summoned!", 2);
@@ -178,6 +165,7 @@ public class SummonService {
 
         return new int[]{1, 1};
     }
+
     public static void applyKeywordsForUnit(UnitEntity unit, String filePath) {
         if (unit == null || filePath == null) return;
 
@@ -245,6 +233,7 @@ public class SummonService {
             unit.addKeyword("PROVOKE");
         }
     }
+
     private void compactHandLeft(Hand hand) {
         if (hand == null) return;
         for (int slot = Hand.MIN_SLOT; slot < Hand.MAX_SLOT; slot++) {

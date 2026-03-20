@@ -1,0 +1,74 @@
+# ---------------------------------------
+# Main Exclusions
+# ---------------------------------------
+
+# Java Build Target
+target/**
+
+# App Assets
+app/assets/**
+
+# Dependancy Cache
+null/**
+
+# SBT Components
+logs/**
+project/**
+public/**
+sbt-dist/**
+scripts/**
+sbt
+sbt.bat
+
+# ---------------------------------------
+# Additional Files from IDE's
+# ---------------------------------------
+
+# Any compiled files not caught above
+*.war
+*.ear
+*.class
+
+.idea/
+
+
+# Skip Eclipse Files
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# Java annotation processor (APT)
+.factorypath
+
+# sbteclipse plugin
+.target
+
+# Annotation Processing
+.apt_generated/
+.apt_generated_test/
+
+# Scala IDE specific (Scala & Java development for Eclipse)
+.cache-main
+.scala_dependencies
+.worksheet
+/bin/
+
+.jvmopts
+.DS_Store

@@ -7,6 +7,10 @@ import structures.GameState;
 import structures.UnitEntity;
 import structures.basic.UnitAnimationType;
 
+/**
+ * Handles unit removal logic including death animation, state update,
+ * and triggering death-related effects.
+ */
 public class UnitRemovalService {
 
     private final CommandDispatcher ui = new CommandDispatcher();

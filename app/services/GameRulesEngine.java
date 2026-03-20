@@ -9,7 +9,13 @@ import structures.basic.Tile;
 import utils.BasicObjectBuilders;
 
 import java.util.Set;
+import java.util.HashSet;
+import java.util.List;
 
+/**
+ * Handles user input events and coordinates game logic such as movement,
+ * combat, card play, and unit interaction.
+ */
 public class GameRulesEngine {
 
     private final CommandDispatcher ui = new CommandDispatcher();
@@ -21,6 +27,7 @@ public class GameRulesEngine {
     public void onTileClicked(ActorRef out, GameState gameState, JsonNode message) {
         if (gameState == null || gameState.getBoard() == null) return;
         if (gameState.isGameOver()) return;
+        if (gameState.isAnimationInProgress()) return;
 
         int x = message.get("tilex").asInt();
         int y = message.get("tiley").asInt();
@@ -41,6 +48,8 @@ public class GameRulesEngine {
             if (!gameState.getHighlightedSpellTargets().contains(key)) {
                 ui.clearSpellTargeting(out, gameState);
                 gameState.setSelectedCardPos(null);
+                gameState.setSelectedSpellCardPos(null);
+                gameState.setWaitingSpellTarget(false);
             }
         }
 
@@ -60,7 +69,21 @@ public class GameRulesEngine {
             if (selectedId != null) {
                 UnitEntity attacker = gameState.getUnitById(selectedId);
                 if (attacker != null) {
-                    combatResolver.tryAttack(out, gameState, attacker, unitAt);
+
+                    boolean attacked = combatResolver.tryAttack(out, gameState, attacker, unitAt);
+
+                    if (!attacked) {
+                        Position movePos = findMovePositionForAttack(gameState, attacker, unitAt);
+
+                        if (movePos != null) {
+                            Tile moveTile = BasicObjectBuilders.loadTile(
+                                    movePos.getTilex(),
+                                    movePos.getTiley()
+                            );
+
+                            movementService.moveSelectedUnitTo(out, gameState, movePos, moveTile);
+                        }
+                    }
                 }
             }
             ui.clearAllHighlights(out, gameState);
@@ -106,7 +129,15 @@ public class GameRulesEngine {
             ui.highlightCenterTile(out, gameState, unitAt.getPosition());
 
             if (canAttack) {
-                ui.highlightAttackTargets(out, gameState, unitAt);
+                Set<Position> targets = computeMoveThenAttackTargets(gameState, unitAt);
+
+                for (Position pos : targets) {
+                    int tx = pos.getTilex();
+                    int ty = pos.getTiley();
+
+                    gameState.getHighlightedAttackTiles().add(tx + "," + ty);
+                    ui.drawTileMode(out, tx, ty, CommandDispatcher.TILE_ATTACK_HIGHLIGHT);
+                }
             }
 
             return;
@@ -119,6 +150,7 @@ public class GameRulesEngine {
     public void onCardClicked(ActorRef out, GameState gameState, JsonNode message) {
         if (gameState == null) return;
         if (gameState.isGameOver()) return;
+        if (gameState.isAnimationInProgress()) return;
 
         if (message.has("tilex") && message.has("tiley")) {
             onTileClicked(out, gameState, message);
@@ -134,12 +166,15 @@ public class GameRulesEngine {
     public void onOtherClicked(ActorRef out, GameState gameState, JsonNode message) {
         if (gameState == null) return;
         if (gameState.isGameOver()) return;
+        if (gameState.isAnimationInProgress()) return;
 
         ui.clearSpellTargeting(out, gameState);
         ui.clearAllHighlights(out, gameState);
 
         gameState.setSelectedUnitId(null);
         gameState.setSelectedCardPos(null);
+        gameState.setSelectedSpellCardPos(null);
+        gameState.setWaitingSpellTarget(false);
     }
 
     private boolean isMoveHighlighted(GameState s, int x, int y) {
@@ -157,6 +192,52 @@ public class GameRulesEngine {
     public static void clearAllHighlightsUI(ActorRef out, GameState gameState) {
         new CommandDispatcher().clearAllHighlights(out, gameState);
     }
+
+    private Set<Position> computeMoveThenAttackTargets(GameState gameState, UnitEntity attacker) {
+        Set<Position> targets = new HashSet<>();
+
+        targets.addAll(combatResolver.computeLegalAttackTargets(gameState, attacker));
+
+        List<Position> moveTiles = movementService.computeMovesForUnit(gameState, attacker);
+
+        for (UnitEntity enemy : gameState.getUnitsById().values()) {
+            if (enemy == null) continue;
+            if (enemy.getOwnerPlayerId() == attacker.getOwnerPlayerId()) continue;
+
+            Position enemyPos = enemy.getPosition();
+
+            for (Position movePos : moveTiles) {
+                if (isAdjacent(movePos, enemyPos)) {
+                    targets.add(enemyPos);
+                    break;
+                }
+            }
+        }
+
+        return targets;
+    }
+
+    private Position findMovePositionForAttack(GameState gameState, UnitEntity attacker, UnitEntity defender) {
+        if (attacker == null || defender == null) return null;
+
+        List<Position> moveTiles = movementService.computeMovesForUnit(gameState, attacker);
+        Position defenderPos = defender.getPosition();
+
+        for (Position p : moveTiles) {
+            if (isAdjacent(p, defenderPos)) {
+                return p;
+            }
+        }
+
+        return null;
+    }
+
+    private boolean isAdjacent(Position a, Position b) {
+        int dx = Math.abs(a.getTilex() - b.getTilex());
+        int dy = Math.abs(a.getTiley() - b.getTiley());
+        return dx <= 1 && dy <= 1 && !(dx == 0 && dy == 0);
+    }
+
 
     private Position tilePos(int tilex, int tiley) {
         Position p = new Position();

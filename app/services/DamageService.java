@@ -6,6 +6,10 @@ import structures.AvatarUnit;
 import structures.GameState;
 import structures.UnitEntity;
 
+/**
+ * Handles damage and healing logic, including health updates,
+ * UI synchronisation, and triggering related effects.
+ */
 public class DamageService {
 
     private final GameEndChecker gameEndChecker = new GameEndChecker();

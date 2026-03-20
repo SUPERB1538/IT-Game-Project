@@ -19,11 +19,15 @@ public class TurnManager {
 
         if (gameState == null) return;
         if (gameState.isGameOver()) return;
+        if (gameState.isAnimationInProgress()) return;
 
         // Clear UI interaction state
         GameRulesEngine.clearAllHighlightsUI(out, gameState);
         gameState.setSelectedUnitId(null);
         gameState.setSelectedCardPos(null);
+        gameState.setSelectedSpellCardPos(null);
+        gameState.setWaitingSpellTarget(false);
+        gameState.clearPendingMove();
 
         // 1) Current player loses any unspent mana
         int current = gameState.getCurrentPlayerId();
@@ -46,7 +50,9 @@ public class TurnManager {
 
         // 5) AI flow: AI takes its whole turn immediately, then return to human
         if (next == 2) {
+            try { Thread.sleep(200); } catch (Exception ignored) {}
             AIDecisionEngine.playTurn(out, gameState);
+            try { Thread.sleep(200); } catch (Exception ignored) {}
 
             if (gameState.isGameOver()) return;
             manaService.clearUnspentManaAndUpdateUI(out, gameState, 2);

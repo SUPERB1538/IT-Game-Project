@@ -9,7 +9,7 @@ import structures.basic.EffectAnimation;
 import utils.BasicObjectBuilders;      
 
 /**
- * Person B: Centralized Spell Resolution Framework.
+ * Centralized Spell Resolution Framework.
  * Handles the logic for all spell cards, ensuring a separation 
  * between UI triggers and gameplay effects.
  */

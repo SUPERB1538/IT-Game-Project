@@ -6,7 +6,7 @@ import structures.*;
 import structures.basic.Position;
 
 /**
- * Service: Targeting Strategy (Person B)
+ * Service: Targeting Strategy
  * Responsibilities: Encapsulates the rules for calculating valid target coordinates 
  * for spells without modifying the underlying game state.
  */

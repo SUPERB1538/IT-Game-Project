@@ -10,6 +10,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Handles all trigger-based game events such as Opening Gambit,
+ * Deathwatch, On Hit, and Zeal effects.
+ */
 public class TriggerSystem {
 
     private final PersistentEffectManager persistentEffectManager = new PersistentEffectManager();
