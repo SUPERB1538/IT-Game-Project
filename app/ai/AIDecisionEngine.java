@@ -398,8 +398,10 @@ public class AIDecisionEngine {
             if (attacker.canMove(currentTurn)) {
                 Position bestMove = chooseBestMove(gameState, movementService, attacker);
                 if (bestMove != null) {
-                    moveUnit(out, gameState, attacker, bestMove);
-                    pause(120);
+                    boolean moved = moveUnit(out, gameState, attacker, bestMove);
+                    if (moved) {
+                        return;
+                    }
                 }
             }
 
@@ -457,24 +459,18 @@ public class AIDecisionEngine {
         return score;
     }
 
-    private static void moveUnit(ActorRef out, GameState gameState, UnitEntity unit, Position targetPos) {
-        if (out == null || gameState == null || unit == null || targetPos == null) return;
+    private static boolean moveUnit(ActorRef out, GameState gameState, UnitEntity unit, Position targetPos) {
+        if (out == null || gameState == null || unit == null || targetPos == null) return false;
+        if (gameState.isAnimationInProgress()) return false;
 
-        int t = gameState.getGlobalTurnNumber();
-        if (!unit.canMove(t)) return;
-        if (!gameState.getBoard().isValidPosition(targetPos)) return;
-        if (gameState.getBoard().isOccupied(targetPos)) return;
+        Integer oldSelected = gameState.getSelectedUnitId();
+        gameState.setSelectedUnitId(unit.getId());
 
-        Position from = copyPosition(unit.getPosition());
         Tile targetTile = BasicObjectBuilders.loadTile(targetPos.getTilex(), targetPos.getTiley());
+        boolean moved = new MovementService().moveSelectedUnitTo(out, gameState, targetPos, targetTile);
 
-        gameState.getBoard().moveUnit(from, targetPos);
-        unit.moveTo(targetTile);
-        unit.markMoved(t);
-
-        BasicCommands.playUnitAnimation(out, unit, UnitAnimationType.move);
-        BasicCommands.moveUnitToTile(out, unit, targetTile);
-        BasicCommands.playUnitAnimation(out, unit, UnitAnimationType.idle);
+        gameState.setSelectedUnitId(oldSelected);
+        return moved;
     }
 
     // =========================================================

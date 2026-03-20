@@ -1,7 +1,7 @@
-                       package structures;
+package structures;
 
 import structures.basic.Player;
-
+import structures.basic.Position;
 
 public class GameState {
 
@@ -104,6 +104,7 @@ public class GameState {
 	private int globalTurnNumber = 0;
 	private int p1TurnNumber = 0;
 	private int p2TurnNumber = 0;
+
 	public int getGlobalTurnNumber() {
 		return globalTurnNumber;
 	}
@@ -134,7 +135,6 @@ public class GameState {
 		getCurrentPlayerState().setMana(0);
 	}
 
-
 	// -----------------------------
 	// Unit id generator (for summoned units)
 	// -----------------------------
@@ -161,6 +161,32 @@ public class GameState {
 	public void setSelectedSpellCardPos(Integer pos) { this.selectedSpellCardPos = pos; }
 
 	public java.util.Set<String> getHighlightedSpellTargets() { return highlightedSpellTargets; }
+
+	// -----------------------------
+	// Animation / async move state
+	// -----------------------------
+	private boolean animationInProgress = false;
+	private Integer movingUnitId = null;
+	private Position pendingMoveFrom = null;
+	private Position pendingMoveTo = null;
+
+	public boolean isAnimationInProgress() { return animationInProgress; }
+	public void setAnimationInProgress(boolean b) { this.animationInProgress = b; }
+
+	public Integer getMovingUnitId() { return movingUnitId; }
+	public void setMovingUnitId(Integer id) { this.movingUnitId = id; }
+
+	public Position getPendingMoveFrom() { return pendingMoveFrom; }
+	public void setPendingMoveFrom(Position p) { this.pendingMoveFrom = p; }
+
+	public Position getPendingMoveTo() { return pendingMoveTo; }
+	public void setPendingMoveTo(Position p) { this.pendingMoveTo = p; }
+
+	public void clearPendingMove() {
+		this.movingUnitId = null;
+		this.pendingMoveFrom = null;
+		this.pendingMoveTo = null;
+	}
 
 	private boolean gameOver = false;
 

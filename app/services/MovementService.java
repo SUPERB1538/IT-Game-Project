@@ -75,12 +75,14 @@ public class MovementService {
     }
 
     public boolean moveSelectedUnitTo(ActorRef out, GameState gameState, Position targetPos, Tile targetTile) {
+        if (out == null || gameState == null || targetPos == null || targetTile == null) return false;
+        if (gameState.isAnimationInProgress()) return false;
 
         Integer selectedId = gameState.getSelectedUnitId();
         if (selectedId == null) return false;
 
         UnitEntity unit = gameState.getUnitById(selectedId);
-        if (unit == null) return false;
+        if (unit == null || unit.getPosition() == null) return false;
 
         int t = gameState.getGlobalTurnNumber();
         if (!unit.canMove(t)) {
@@ -96,16 +98,16 @@ public class MovementService {
         if (!gameState.getBoard().isValidPosition(targetPos)) return false;
         if (gameState.getBoard().isOccupied(targetPos)) return false;
 
-        Position from = unit.getPosition();
+        Position from = copyPosition(unit.getPosition());
 
-        gameState.getBoard().moveUnit(from, targetPos);
-
-        unit.moveTo(targetTile);
-        unit.markMoved(t);
+        // 只记录“待完成移动”，不要在这里正式更新 board / position
+        gameState.setAnimationInProgress(true);
+        gameState.setMovingUnitId(unit.getId());
+        gameState.setPendingMoveFrom(from);
+        gameState.setPendingMoveTo(copyPosition(targetPos));
 
         BasicCommands.playUnitAnimation(out, unit, UnitAnimationType.move);
         BasicCommands.moveUnitToTile(out, unit, targetTile);
-        BasicCommands.playUnitAnimation(out, unit, UnitAnimationType.idle);
 
         return true;
     }
@@ -146,6 +148,13 @@ public class MovementService {
         Position p = new Position();
         p.setTilex(tilex);
         p.setTiley(tiley);
+        return p;
+    }
+
+    private Position copyPosition(Position src) {
+        Position p = new Position();
+        p.setTilex(src.getTilex());
+        p.setTiley(src.getTiley());
         return p;
     }
 }

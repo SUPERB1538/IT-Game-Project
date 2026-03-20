@@ -19,11 +19,15 @@ public class TurnManager {
 
         if (gameState == null) return;
         if (gameState.isGameOver()) return;
+        if (gameState.isAnimationInProgress()) return;
 
         // Clear UI interaction state
         GameRulesEngine.clearAllHighlightsUI(out, gameState);
         gameState.setSelectedUnitId(null);
         gameState.setSelectedCardPos(null);
+        gameState.setSelectedSpellCardPos(null);
+        gameState.setWaitingSpellTarget(false);
+        gameState.clearPendingMove();
 
         // 1) Current player loses any unspent mana
         int current = gameState.getCurrentPlayerId();
