@@ -7,6 +7,7 @@ import services.EffectResolver;
 import services.MovementService;
 import services.SummonService;
 import services.TriggerSystem;
+import services.CommandDispatcher;
 import structures.*;
 import structures.basic.Position;
 import structures.basic.Tile;
@@ -52,10 +53,10 @@ public class AIDecisionEngine {
 
             if (tryCastBestSpell(out, gameState)) {
                 playedSomething = true;
-                pause(120);
+                pause(180);
             } else if (tryPlayBestCreature(out, gameState)) {
                 playedSomething = true;
-                pause(120);
+                pause(180);
             }
 
             guard++;
@@ -378,7 +379,11 @@ public class AIDecisionEngine {
             }
         }
 
-        aiUnits.sort(Comparator.comparingInt(UnitEntity::getAttack).reversed());
+        aiUnits.sort(
+                Comparator.comparingInt(UnitEntity::getAttack)
+                        .thenComparingInt(UnitEntity::getHealth)
+                        .reversed()
+        );
 
         for (UnitEntity attacker : aiUnits) {
             if (gameState.isGameOver()) return;
@@ -388,8 +393,8 @@ public class AIDecisionEngine {
             if (attacker.canAttack(currentTurn)) {
                 UnitEntity targetNow = chooseBestLegalTarget(gameState, combatResolver, attacker);
                 if (targetNow != null) {
-                    combatResolver.tryAttack(out, gameState, attacker, targetNow);
-                    pause(120);
+                    performVisualisedAttack(out, gameState, combatResolver, attacker, targetNow);
+                    pause(220);
                     continue;
                 }
             }
@@ -400,7 +405,7 @@ public class AIDecisionEngine {
                 if (bestMove != null) {
                     boolean moved = moveUnit(out, gameState, attacker, bestMove);
                     if (moved) {
-                        return;
+                        pause(120);
                     }
                 }
             }
@@ -409,8 +414,8 @@ public class AIDecisionEngine {
             if (attacker.canAttack(currentTurn) && !attacker.isDead()) {
                 UnitEntity targetAfterMove = chooseBestLegalTarget(gameState, combatResolver, attacker);
                 if (targetAfterMove != null) {
-                    combatResolver.tryAttack(out, gameState, attacker, targetAfterMove);
-                    pause(120);
+                    performVisualisedAttack(out, gameState, combatResolver, attacker, targetAfterMove);
+                    pause(220);
                 }
             }
         }
@@ -462,12 +467,22 @@ public class AIDecisionEngine {
     private static boolean moveUnit(ActorRef out, GameState gameState, UnitEntity unit, Position targetPos) {
         if (out == null || gameState == null || unit == null || targetPos == null) return false;
         if (gameState.isAnimationInProgress()) return false;
+        if (unit.getPosition() == null) return false;
+
+        Position from = copyPosition(unit.getPosition());
+        long moveDuration = estimateMoveDurationMs(from, targetPos, unit);
 
         Integer oldSelected = gameState.getSelectedUnitId();
         gameState.setSelectedUnitId(unit.getId());
 
         Tile targetTile = BasicObjectBuilders.loadTile(targetPos.getTilex(), targetPos.getTiley());
         boolean moved = new MovementService().moveSelectedUnitTo(out, gameState, targetPos, targetTile);
+
+        if (moved) {
+            // Wait for the frontend movement animation to finish before any attack starts
+            pause(moveDuration);
+            pause(180);
+        }
 
         gameState.setSelectedUnitId(oldSelected);
         return moved;
@@ -607,6 +622,24 @@ public class AIDecisionEngine {
         return Math.abs(a.getTilex() - b.getTilex()) + Math.abs(a.getTiley() - b.getTiley());
     }
 
+    private static long estimateMoveDurationMs(Position from, Position to, UnitEntity unit) {
+        if (from == null || to == null) return 700;
+
+        int dx = Math.abs(from.getTilex() - to.getTilex());
+        int dy = Math.abs(from.getTiley() - to.getTiley());
+
+        if (unit != null && unit.hasKeyword("FLYING")) {
+            return 1150 + (dx + dy) * 140L;
+        }
+
+        int steps = Math.max(dx, dy);
+
+        if (steps <= 1) return 800;
+        if (steps == 2) return 1100;
+
+        return 1250;
+    }
+
     private static String safeUpper(String s) {
         return (s == null) ? "" : s.toUpperCase();
     }
@@ -631,6 +664,43 @@ public class AIDecisionEngine {
             Thread.sleep(ms);
         } catch (Exception ignored) {
         }
+    }
+
+    private static void performVisualisedAttack(
+            ActorRef out,
+            GameState gameState,
+            CombatResolver combatResolver,
+            UnitEntity attacker,
+            UnitEntity target
+    ) {
+        if (out == null || gameState == null || attacker == null || target == null) return;
+
+        CommandDispatcher ui = new CommandDispatcher();
+
+        // 1. Clear previous highlights
+        ui.clearAllHighlights(out, gameState);
+
+        // 2. Select attacker
+        gameState.setSelectedUnitId(attacker.getId());
+
+        // 3. Highlight attacker
+        ui.highlightCenterTile(out, gameState, attacker.getPosition());
+
+        // 4. Highlight attack targets
+        ui.highlightAttackTargets(out, gameState, attacker);
+
+        // 5. Small delay for visual clarity
+        pause(400);
+
+        // 6. Perform attack
+        combatResolver.tryAttack(out, gameState, attacker, target);
+
+        // 7. Post-attack delay
+        pause(200);
+
+        // 8. Clear highlights
+        ui.clearAllHighlights(out, gameState);
+        gameState.setSelectedUnitId(null);
     }
 
     private static int[] creatureStats(String cardKey) {
